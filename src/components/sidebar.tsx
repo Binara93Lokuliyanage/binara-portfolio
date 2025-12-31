@@ -31,12 +31,14 @@ const Sidebar = () => {
           }`}
         onMouseEnter={() => {
           setIsLogoHovered(true);
-          lottieRef.current?.setSpeed(0.4); // ✅ slow
+          lottieRef.current?.setSpeed(0.6); 
           lottieRef.current?.play();
         }}
         onMouseLeave={() => {
           setIsLogoHovered(false);
           setPlayLottie(false);
+          lottieRef.current?.stop();              
+          lottieRef.current?.goToAndStop(0, true); 
         }}
       >
         {/* Hidden logo */}
@@ -83,6 +85,10 @@ const Sidebar = () => {
           })}
         </ul>
       </nav>
+
+      <div className = "nav-extra-btn">
+        <img src="/icons/download.svg"  />
+      </div>
     </aside>
   );
 };
