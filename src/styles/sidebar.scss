@@ -1,0 +1,131 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 72px;
+  padding: 2rem 0rem 4rem;
+  background: var(--off-white);
+  border-left: 1px solid var(--grey) solid #e5e5e5;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    transition: background-color 0.5s ease;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    padding: 4px;
+    align-self: flex-end;
+    align-items: center;
+    margin-right: 5px;
+  }
+
+  .logo-lottie {
+  width: 32px;
+  height: 32px;
+
+  opacity: 0%;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+
+  pointer-events: none; 
+}
+
+.logo-lottie-active {
+  opacity: 100%;
+}
+
+  .logo-wrapper-active {
+    background-color: var(--grey);
+    border: 1px solid var(--dark-grey);
+  }
+
+  .logo-hidden {
+    opacity: 0%;
+  }
+
+  .logo-show {
+    opacity: 100%;
+  }
+
+  .logo {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    transition: opacity 0.5s ease, transform 0.25s ease;
+    img {
+      display: block;
+      cursor: pointer;
+      transition: 0.2s ease;
+      object-fit:contain;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      li {
+        &.active {
+          background-color: var(--primary);
+          border: 1px solid var(--dark-yellow);
+          svg {
+          fill: black;
+        }
+      }
+        &:hover {
+          transition: 0.25s ease;
+          img {
+            transform: scale(1.15);
+            opacity: 0.8;
+          }
+          svg {
+          fill: black;
+        }
+        
+      }
+
+        background-color: #F0F0F6;
+        border-radius: 100%;
+        border: 1px solid var(--grey);
+        height: 52px;
+        width: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.75s ease;
+
+          
+          line-height: 100%;
+
+          img {
+          width: 20px;
+          height: 20px;
+          transition: 0.25s ease;
+          cursor: pointer;
+
+          
+        }
+      
+    }
+  }
+}
+}
