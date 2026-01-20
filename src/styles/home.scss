@@ -1,0 +1,25 @@
+.home-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.social-links-wrapper {
+    display: flex;
+    gap: 1.5rem;
+
+    .social-link{
+        display: flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 100%;
+        background-color: var(--primary);
+        justify-content: center;
+        align-items: center;
+
+        svg{
+            width: 14px;
+            
+        }
+    }
+}

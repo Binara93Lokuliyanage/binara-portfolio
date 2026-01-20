@@ -138,6 +138,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 110%; /* 52.8px */
 letter-spacing: 0.48px;
+margin: 0;
 }
 @media screen and (min-width: 1280px) {
   h1, .h1 {
@@ -205,9 +206,9 @@ p {
   margin: 0;
 }
 
-p + p, p + a {
-  margin-top: 1.5rem;
-}
+// p + p, p + a {
+//   margin-top: 1.5rem;
+// }
 
 .col-2 {
   display: grid;
@@ -237,10 +238,11 @@ font-style: normal;
 font-weight: 550;
 line-height: 100%;
 transition: all 0.8s ease;
-border: 2px solid transparent;
+border: 2px solid var(--dark-yellow);
 
 &:hover {
-  border: 2px solid var(--dark-yellow)
+  border: 2px solid var(--primary);
+  background-color: var(--dark-yellow);
 }
 
 .btn-arrow {

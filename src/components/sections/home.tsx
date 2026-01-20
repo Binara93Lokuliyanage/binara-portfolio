@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const HomeSection = () => {
   return (
-    <section id="home" className="col-2">
+    <section id="home" className="col-2 section-padding-top section-padding-bottom">
       <h1>Hi, I’m Binara</h1>
-      <div>
+      <div className = "home-section-wrapper">
         <h1>
           I’m <br />Binara Lokuliyanage <br />a <span className="highlight">Passionate</span> Software Engineer
         </h1>
@@ -21,6 +21,17 @@ const HomeSection = () => {
             className="btn-arrow"
           />
         </a>
+        <div className = "social-links-wrapper">
+          <a href = "#" className="social-link">
+            <Image
+            src="/icons/fb-icon.svg"
+            alt="Arrow"
+            width={14}
+            height={14}
+            className="btn-arrow"
+          />
+          </a>
+        </div>
 
       </div>
     </section>
