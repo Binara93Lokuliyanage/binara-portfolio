@@ -1,0 +1,41 @@
+.skills-list-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 3rem;
+
+    .card {
+        border-color: var(--dark-grey);
+        background-color: var(--white);
+        padding: 1.5rem 1.25rem;
+        align-items: flex-start;
+
+        p {
+            text-align: left;
+            color: var(--secondary-black);
+        }
+
+        .title-section {
+            display: flex;
+            gap: 14px;
+            width: 100%;
+            justify-content: center;
+
+            h3 {
+                font-weight: 550;
+                line-height: 2;
+            }
+
+            .icon-wrapper {
+                width: 3rem;
+                height: 3rem;
+                background-color: var(--light-grey);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+    }
+}

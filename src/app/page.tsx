@@ -66,11 +66,13 @@
 
 
 import HomeSection from "@/components/sections/home";
+import SkillSection from "@/components/sections/skills";
 
 export default function Page() {
   return (
     <main>
       <HomeSection />
+      <SkillSection />
     </main>
   );
 }

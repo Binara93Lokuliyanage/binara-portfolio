@@ -1,16 +1,61 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+const words = ["Passionate", "Creative", "Driven"];
 
 const HomeSection = () => {
+  const [text, setText] = useState("");
+  const [wordIndex, setWordIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentWord = words[wordIndex];
+    let timeout: NodeJS.Timeout;
+
+    if (!isDeleting && charIndex < currentWord.length) {
+      timeout = setTimeout(() => {
+        setText(currentWord.slice(0, charIndex + 1));
+        setCharIndex(charIndex + 1);
+      }, 200); // typing speed
+    } else if (isDeleting && charIndex > 0) {
+      timeout = setTimeout(() => {
+        setText(currentWord.slice(0, charIndex - 1));
+        setCharIndex(charIndex - 1);
+      }, 140); // deleting speed
+    } else if (!isDeleting && charIndex === currentWord.length) {
+      timeout = setTimeout(() => setIsDeleting(true), 3000); // pause
+    } else if (isDeleting && charIndex === 0) {
+      setIsDeleting(false);
+      setWordIndex((prev) => (prev + 1) % words.length);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [charIndex, isDeleting, wordIndex]);
+
   return (
     <section id="home" className="col-2 section-padding-top section-padding-bottom">
       <h1>Hi, I’m Binara</h1>
-      <div className = "home-section-wrapper">
+
+      <div className="home-section-wrapper">
         <h1>
-          I’m <br />Binara Lokuliyanage <br />a <span className="highlight">Passionate</span> Software Engineer
+          I’m <br />
+          Binara Lokuliyanage <br />
+          a{" "}
+          <span className="highlight typing">
+            {text}
+            <span className="cursor">|</span>
+          </span>{" "}<br />
+          Software Engineer
         </h1>
+
         <p>
-          I’m Binara Lokuliyanage, a passionate Software Engineer with over 5 years of professional experience in full-stack web development. My technical expertise spans React, Angular, Node.js, Laravel, and PHP, along with hands-on experience in NoSQL databases like MongoDB and relational systems such as MySQL.
+          I’m Binara Lokuliyanage, a passionate Software Engineer with over 5 years
+          of professional experience in full-stack web development.
         </p>
+
         <a className="btn-primary">
           Hire me
           <Image
@@ -31,8 +76,34 @@ const HomeSection = () => {
             className="btn-arrow"
           />
           </a>
+          <a href = "#" className="social-link">
+            <Image
+            src="/icons/insta-icon.svg"
+            alt="Arrow"
+            width={12}
+            height={12}
+            className="btn-arrow"
+          />
+          </a>
+          <a href = "#" className="social-link">
+            <Image
+            src="/icons/linkedin-icon.svg"
+            alt="Arrow"
+            width={12}
+            height={12}
+            className="btn-arrow"
+          />
+          </a>
+          <a href = "#" className="social-link">
+            <Image
+            src="/icons/yt-icon.svg"
+            alt="Arrow"
+            width={13}
+            height={13}
+            className="btn-arrow"
+          />
+          </a>
         </div>
-
       </div>
     </section>
   );
