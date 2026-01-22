@@ -16,8 +16,8 @@ const Sidebar = () => {
   const lottieRef = useRef<LottieRefCurrentProps>(null);
 
   const navItems = [
-    { href: "/", icon: "home", alt: "Home" },
-    { href: "/skills", icon: "skills", alt: "Skills" },
+    { href: "#home", icon: "home", alt: "Home" },
+    { href: "#skills", icon: "skills", alt: "Skills" },
     { href: "/projects", icon: "projects", alt: "Projects" },
     { href: "/education", icon: "education", alt: "Education" },
     { href: "/experience", icon: "experience", alt: "Experience" },
