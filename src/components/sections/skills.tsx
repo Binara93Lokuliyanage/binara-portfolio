@@ -15,8 +15,8 @@ const SkillsSection = () => {
                         <div className="title-section">
                             <div className="icon-wrapper">
                                 <Image
-                                    src="/icons/skills-frontend.png"
-                                    alt="Arrow"
+                                    src="/icons/skills-fe.png"
+                                    alt="Front end"
                                     width={24}
                                     height={24}
                                     className="btn-arrow"
@@ -43,7 +43,7 @@ const SkillsSection = () => {
                             <div className="icon-wrapper">
                                 <Image
                                     src="/icons/skills-backend.png"
-                                    alt="Arrow"
+                                    alt="Back end"
                                     width={24}
                                     height={24}
                                     className="btn-arrow"
@@ -53,7 +53,7 @@ const SkillsSection = () => {
                                 Backend Development
                             </h4>
                         </div>
-                        <p>Node.js, Express, Laravel, REST APIs</p>
+                        <p>Node.js, Express, Laravel, REST APIs<br /></p>
                         <div className="skill-percentage-area">
                             <div className="skill-info-wrapper">
                                 <p>Proficiency</p>
@@ -96,7 +96,7 @@ const SkillsSection = () => {
                         <div className="title-section">
                             <div className="icon-wrapper">
                                 <Image
-                                    src="/icons/skills-devops.png"
+                                    src="/icons/skills-upload.png"
                                     alt="Arrow"
                                     width={24}
                                     height={24}
@@ -107,7 +107,7 @@ const SkillsSection = () => {
                                 DevOps & Deployment
                             </h4>
                         </div>
-                        <p>Docker, Kubernetes, CI/CD, GCP</p>
+                        <p>Docker, Kubernetes, CI/CD, GCP<br /></p>
                         <div className="skill-percentage-area">
                             <div className="skill-info-wrapper">
                                 <p>Proficiency</p>
@@ -123,7 +123,7 @@ const SkillsSection = () => {
                         <div className="title-section">
                             <div className="icon-wrapper">
                                 <Image
-                                    src="/icons/skills-frontend.png"
+                                    src="/icons/skills-design.png"
                                     alt="Arrow"
                                     width={24}
                                     height={24}
@@ -134,7 +134,7 @@ const SkillsSection = () => {
                                 Design & UX
                             </h4>
                         </div>
-                        <p>Figma, Photoshop, wireframing, responsive</p>
+                        <p>Figma, Photoshop, wireframing, responsive<br /></p>
                         <div className="skill-percentage-area">
                             <div className="skill-info-wrapper">
                                 <p>Proficiency</p>
@@ -150,7 +150,7 @@ const SkillsSection = () => {
                         <div className="title-section">
                             <div className="icon-wrapper">
                                 <Image
-                                    src="/icons/skills-frontend.png"
+                                    src="/icons/skills-eng.png"
                                     alt="Arrow"
                                     width={24}
                                     height={24}
