@@ -65,6 +65,7 @@
 // }
 
 
+import EducationSection from "@/components/sections/education";
 import HomeSection from "@/components/sections/home";
 import ProjectsSection from "@/components/sections/projects";
 import SkillSection from "@/components/sections/skills";
@@ -75,6 +76,7 @@ export default function Page() {
       <HomeSection />
       <SkillSection />
       <ProjectsSection />
+      <EducationSection />
     </main>
   );
 }
