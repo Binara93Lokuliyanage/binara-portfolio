@@ -1,27 +1,27 @@
 import Image from "next/image";
 
-const EducationSection = () => {
+const ExperienceSection = () => {
     return (
-        <section id="education" className="section-padding-top section-padding-bottom bg-off-white">
+        <section id="experience" className="section-padding-top section-padding-bottom">
             <div className="container text-center">
                 <h2>
-                    My <span className="highlight">Education</span>
+                    My <span className="highlight">Experience</span>
                 </h2>
-                <div className="bullet-section-wrapper ">
+                <div className="bullet-section-wrapper">
                     <div className="item">
                         <div className="bullet-line-wrapper">
                             <div className="bullet-line-invis"></div>
                             <div className="bullet"></div>
                             <div className="bullet-line"></div>
                         </div>
-                        <div className="card edu-card">
+                        <div className="card exp-card">
                             <div className="card-heading">
                                 <div className="title-wrapper">
-                                    <h3>Master of Information Technology</h3>
-                                    <h5>Deakin University Burwood</h5>
+                                    <h3>Splashbox Australia</h3>
+                                    <h5>Web Developer</h5>
                                 </div>
                                 <div className="duration-block">
-                                    June 2024 - June 2026
+                                    Feb 2023 - June 2024
                                 </div>
                             </div>
                             <p>
@@ -42,7 +42,7 @@ const EducationSection = () => {
                             <div className="bullet-blank"></div>
                             <div className="bullet-line"></div>
                         </div>
-                        <div className="card edu-card">
+                        <div className="card exp-card">
                             <div className="card-heading">
                                 <div className="title-wrapper">
                                     <h3>Master of Information Technology</h3>
@@ -70,4 +70,4 @@ const EducationSection = () => {
     );
 };
 
-export default EducationSection;
+export default ExperienceSection;

@@ -292,3 +292,84 @@ border: 2px solid var(--dark-yellow);
     transform: translateX(4px);
   }
 }
+
+.bullet-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+
+    .item {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+
+        .bullet-line-wrapper {
+            width: 30px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .bullet {
+                width: 1rem;
+                height: 1.35rem;
+                border-radius: 100%;
+                background-color: var(--primary);
+            }
+
+            .bullet-blank {
+                width: 1rem;
+                height: 1.35rem;
+                border-radius: 100%;
+                border: 2px solid var(--primary);
+            }
+
+            .bullet-line {
+                width: 2px;
+                height: 100%;
+                background-color: var(--primary);
+            }
+
+            .bullet-line-invis {
+                width: 2px;
+                height: 48px;
+            }
+
+            .bullet-line-vis {
+                width: 2px;
+                height: 48px;
+                background-color: var(--primary);
+            }
+        }
+
+        .card {
+            text-align: left;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            .card-heading {
+                display: flex;
+                justify-content: space-between;
+
+                h3 {
+                    font-weight: 500;
+                }
+
+                h5 {
+                    font-weight: 550;
+                    color: var(--primary);
+                }
+            }
+
+            .duration-block {
+                padding: 0.5rem 1rem;
+                background-color: var(--light-grey);
+                color: var(--secondary-black);
+                font-weight: 550;
+                height: fit-content;
+                border-radius: 18px;
+            }
+        }
+    }
+}
