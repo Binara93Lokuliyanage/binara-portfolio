@@ -10,6 +10,8 @@ const Sidebar = () => {
   const [isLogoHovered, setIsLogoHovered] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const lottieRef = useRef<LottieRefCurrentProps>(null);
+  const [isMounted, setIsMounted] = useState(false);
+
 
   const navItems = [
     { href: "#home", id: "home", icon: "home", alt: "Home" },
@@ -17,7 +19,7 @@ const Sidebar = () => {
     { href: "#projects", id: "projects", icon: "projects", alt: "Projects" },
     { href: "#education", id: "education", icon: "education", alt: "Education" },
     { href: "#experience", id: "experience", icon: "experience", alt: "Experience" },
-    { href: "#contact", id: "contact", icon: "contact", alt: "Contact" },
+    { href: "#footer", id: "contact", icon: "contact", alt: "Contact" },
   ];
 
   /* 🔥 NEW: Observe sections */
@@ -44,8 +46,14 @@ const Sidebar = () => {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+  setIsMounted(true);
+}, []);
+
+
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isMounted ? "sidebar-visible" : ""}`}>
+
       <div
         className={`logo-wrapper ${isLogoHovered ? "logo-wrapper-active" : ""}`}
         onMouseEnter={() => {

@@ -222,6 +222,23 @@ h5, .h5 {
   }
 }
 
+h6, .h6 {
+  line-height: 110%;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 600;
+}
+@media screen and (min-width: 1280px) {
+  h6, .h6 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 660px) {
+  h6, .h6 {
+    font-size: 16px;
+  }
+}
+
 
 p {
   margin: 0;

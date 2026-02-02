@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
 import Sidebar from "../components/sidebar";
 import SidebarDark from "../components/sidebar-dark";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Sidebar />
         {/* <SidebarDark /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );
