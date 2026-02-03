@@ -293,6 +293,7 @@ font-weight: 550;
 line-height: 100%;
 transition: all 0.8s ease;
 border: 2px solid var(--dark-yellow);
+color: var(--secondary);
 
 &:hover {
   border: 2px solid var(--primary);
