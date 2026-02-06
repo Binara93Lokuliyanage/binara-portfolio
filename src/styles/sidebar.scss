@@ -179,10 +179,17 @@
     ul {
       li {
         background-color: var(--secondary) !important;
-        border: 1px solid var(--light-grey) !important;
+        border: 1px solid var(--dark-grey) !important;
+        border-radius: 100%;
+
+        div {
+          background-color: inherit;
+          border: 0px;
+        }
 
         &.active {
 
+          border-color: var(--dark-yellow) !important;
           svg {
             fill: var(--white);
           }

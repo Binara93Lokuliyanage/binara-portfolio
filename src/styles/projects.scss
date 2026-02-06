@@ -70,3 +70,17 @@
         }
     }
 }
+
+.freelancer-dark {
+    .projects-wrapper {
+        .card {
+            background-color: var(--secondary-black);
+
+            .tech-items-wrapper {
+                .item {
+                    background-color: var(--secondary);
+                }
+            }
+        }
+    }
+}

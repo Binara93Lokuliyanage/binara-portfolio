@@ -1,0 +1,75 @@
+.client-logos-slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+
+}
+
+.client-logos-slider::before,
+.client-logos-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 140px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.client-logos-slider::before {
+  left: 0;
+  background: linear-gradient(to right, var(--secondary-black), transparent);
+}
+
+.client-logos-slider::after {
+  right: 0;
+  background: linear-gradient(to left, var(--secondary-black), transparent);
+}
+
+.client-logos-track {
+  display: flex;
+  width: max-content;
+  animation: scrollClients 35s linear infinite;
+}
+
+/* slow on hover */
+// .client-logos-slider:hover .client-logos-track {
+//   animation-duration: 80s;
+// }
+
+/* each row */
+.logos-row {
+  display: flex;
+  gap: 3rem;
+  padding-right: 4rem;
+}
+
+/* logo */
+.client-logo-wrapper {
+  height: 60px;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.client-logo-wrapper img {
+  height: 100%;
+  width: auto;
+  opacity: 0.8;
+  transition: 0.4s ease;
+  filter: brightness(0) invert(1) contrast(0);
+}
+
+.client-logo-wrapper:hover img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* infinite animation */
+@keyframes scrollClients {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

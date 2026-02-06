@@ -29,6 +29,7 @@
                 width: 3rem;
                 height: 3rem;
                 background-color: var(--light-grey);
+                border-radius: 5px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -73,4 +74,17 @@
         color: var(--primary) !important;
     }
 
+  }
+
+  .freelancer-dark {
+    .skills-list-section {
+        .card {
+            background-color: var(--secondary);
+            border-color: var(--dark-grey);
+
+            .icon-wrapper {
+                background-color: var(--secondary-black);
+            }
+        }
+    }
   }

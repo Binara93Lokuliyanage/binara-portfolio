@@ -36,7 +36,7 @@ const HomeDarkSection = () => {
   }, [charIndex, isDeleting, wordIndex]);
 
   return (
-    <section id="home" className="col-2 section-padding-top section-padding-bottom home-dark bg-dark">
+    <section id="home" className="col-2 section-padding-top section-padding-bottom freelancer-dark bg-dark">
       <h1>Hi, I’m Binara</h1>
 
       <div className="home-section-wrapper">

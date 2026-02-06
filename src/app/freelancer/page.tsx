@@ -68,15 +68,17 @@
 import EducationSection from "@/components/sections/education";
 import ExperienceSection from "@/components/sections/experience";
 import HomeDarkSection from "@/components/sections/home-dark";
-import ProjectsSection from "@/components/sections/projects";
-import SkillSection from "@/components/sections/skills";
+import ProjectsDarkSection from "@/components/sections/projects-dark";
+import ServicesDarkSection from "@/components/sections/services-dark";
+import ClientsDarkSection from "@/components/sections/clients-dark";
 
 export default function Page() {
   return (
     <main>
       <HomeDarkSection />
-      <SkillSection />
-      <ProjectsSection />
+      <ServicesDarkSection />
+      <ProjectsDarkSection />
+      <ClientsDarkSection />
       <EducationSection />
       <ExperienceSection />
     </main>

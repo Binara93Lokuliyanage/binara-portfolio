@@ -70,6 +70,10 @@ body {
   background-color: var(--secondary);
 }
 
+.bg-light-dark {
+  background-color: var(--secondary-black);
+}
+
 .bg-white {
   background-color: var(--white);
 }
@@ -84,6 +88,13 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.freelancer-dark {
+  h1, h2, h3, h4, h5, p {
+    color: var(--off-white) !important;
+  }
+  
 }
 
 @media screen and (max-width: 660px) {
