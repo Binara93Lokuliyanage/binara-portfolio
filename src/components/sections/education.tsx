@@ -7,7 +7,7 @@ const EducationSection = () => {
                 <h2>
                     My <span className="highlight">Education</span>
                 </h2>
-                <div className="bullet-section-wrapper ">
+                <div className="bullet-section-wrapper padding-top">
                     <div className="item">
                         <div className="bullet-line-wrapper">
                             <div className="bullet-line-invis"></div>

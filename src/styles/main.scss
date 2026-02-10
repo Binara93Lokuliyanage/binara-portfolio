@@ -91,6 +91,10 @@ body {
   padding-top: 4rem;
 }
 
+.padding-top {
+    padding-top: 2rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -330,7 +334,6 @@ color: var(--secondary);
 .bullet-section-wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
 
     .item {
         display: flex;
@@ -357,6 +360,20 @@ color: var(--secondary);
                 height: 1.35rem;
                 border-radius: 100%;
                 border: 2px solid var(--primary);
+            }
+
+            .number {
+              width: 3rem;
+                height: 5.35rem;
+                border-radius: 100%;
+                border: 2px solid var(--primary);
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 18px;
+                font-weight: 600;
+                color: var(--primary);
             }
 
             .bullet-line {

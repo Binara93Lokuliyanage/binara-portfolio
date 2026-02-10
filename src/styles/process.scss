@@ -1,0 +1,20 @@
+.process-item {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.process-list {
+    .card {
+        width:  100%;
+        display: flex;
+        border-color: var(--dark-grey);
+        background-color: var(--secondary-black);
+    }
+}
+
+.process-section {
+    .container {
+        align-items: flex-start !important;
+    }
+}
