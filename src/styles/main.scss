@@ -9,6 +9,7 @@
   --dark-grey: #ACACAC;
   --secondary-black: #3C3B3B;
   --dark-yellow: #f5ac03;
+  --light-yellow: #b1b1b1;
 }
 
 html {
@@ -80,6 +81,10 @@ body {
 
 .bg-off-white {
   background-color: var(--off-white);
+}
+
+.bg-grey {
+  background-color: var(--grey);
 }
 
 .section-padding-top {

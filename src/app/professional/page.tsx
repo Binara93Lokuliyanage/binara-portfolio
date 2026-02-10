@@ -70,6 +70,7 @@ import ExperienceSection from "@/components/sections/experience";
 import HomeSection from "@/components/sections/home";
 import ProjectsSection from "@/components/sections/projects";
 import SkillSection from "@/components/sections/skills";
+import TechStack from "@/components/sections/techstack";
 
 export default function Page() {
   return (
@@ -78,7 +79,9 @@ export default function Page() {
       <SkillSection />
       <ProjectsSection />
       <EducationSection />
+      <TechStack />
       <ExperienceSection />
+      
     </main>
   );
 }

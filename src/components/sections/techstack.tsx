@@ -9,11 +9,11 @@ const ClientLogos = [
   "/clients/lonsdale-institute-logo.png",
 ];
 
-const ClientsDarkSection = () => {
+const TechStack = () => {
   return (
     <section
       id="logo-tracks"
-      className="section-padding-top section-padding-bottom bg-light-dark freelancer-dark"
+      className="section-padding-top section-padding-bottom bg-off-white"
     >
       <div className="container text-center">
         <div className="logo-track-logos-slider">
@@ -42,4 +42,4 @@ const ClientsDarkSection = () => {
   );
 };
 
-export default ClientsDarkSection;
+export default TechStack;
