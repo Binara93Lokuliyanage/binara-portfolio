@@ -72,6 +72,7 @@ import ProjectsDarkSection from "@/components/sections/projects-dark";
 import ServicesDarkSection from "@/components/sections/services-dark";
 import ClientsDarkSection from "@/components/sections/clients-dark";
 import ProcessDarkSection from "@/components/sections/process-dark";
+import TestimonialsDarkSection from "@/components/sections/testimonials-dark";
 
 export default function Page() {
   return (
@@ -81,7 +82,7 @@ export default function Page() {
       <ProjectsDarkSection />
       <ClientsDarkSection />
       <ProcessDarkSection />
-      <ExperienceSection />
+      <TestimonialsDarkSection />
     </main>
   );
 }
