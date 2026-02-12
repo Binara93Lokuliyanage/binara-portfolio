@@ -1,0 +1,152 @@
+/* =========================================
+   SPLIT LANDING PAGE HOVER EXPAND
+   ========================================= */
+
+.landing-page {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  transition: grid-template-columns 2s cubic-bezier(.77,0,.18,1);
+  overflow: hidden;
+  padding: 0px !important;
+
+  .freelancer-section {
+    background-color: var(--secondary);
+  }
+
+  .professional-section {
+    background-color: var(--off-white);
+  }
+  /* =========================
+     SELECTER BASE
+     ========================= */
+  .selecter {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    transition: all 2s cubic-bezier(.77,0,.18,1);
+    filter: blur(0px);
+
+    h1 {
+      margin-bottom: 25px;
+      transition: all 2s ease;
+      color: var(--primary);
+    }
+
+    &:hover {
+      cursor: pointer;
+    //   transform: scale(1.02);
+    }
+
+    img {
+      width: 55%;
+      height: auto;
+      object-fit: cover;
+      transition: all 2s ease;
+      margin-bottom: -75px;
+      z-index: -1;
+    }
+  }
+
+  /* =========================
+     GRID EXPANSION
+     ========================= */
+
+  /* Hover LEFT → 70 / 30 */
+  &:has(.freelancer-section:hover) {
+    grid-template-columns: 60% 40%;
+
+    .professional-section { 
+      background-color: var(--secondary);
+     }
+  }
+
+  /* Hover RIGHT → 30 / 70 */
+  &:has(.professional-section:hover) {
+    grid-template-columns: 40% 60%;
+
+    .freelancer-section { 
+      background-color: var(--off-white);
+     }
+  }
+
+  /* =========================
+     IMAGE SIZE CONTROL
+     ========================= */
+
+  /* hovered image grows */
+  &:has(.freelancer-section:hover) {
+    .professional-section h1 { font-size: 24px; }
+  }
+
+  &:has(.professional-section:hover) {
+    .freelancer-section h1 { font-size: 24px; }
+  }
+
+  /* =========================
+     BLUR NON-HOVERED SIDE
+     ========================= */
+
+  &:has(.freelancer-section:hover) {
+    .professional-section {
+      img, h1 { filter: blur(4px); }
+    }
+  }
+
+  &:has(.professional-section:hover) {
+    .freelancer-section {
+      img, h1 { filter: blur(4px); }
+    }
+  }
+}
+
+.landing-page.active-professional {
+  grid-template-columns: 0% 100%;
+  background-color: var(--off-white);
+
+  .freelancer-section {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .professional-section {
+    img {
+      width: 65%;
+      margin-bottom: 0;
+    }
+
+    h1 {
+      transform: translateY(-40vh);
+      font-size: 48px;
+    }
+  }
+}
+
+.landing-page.active-freelancer {
+  grid-template-columns: 100% 0%;
+  background-color: var(--secondary);
+
+  .professional-section {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .freelancer-section {
+    img {
+      width: 65%;
+      margin-bottom: 0;
+    }
+
+    h1 {
+      transform: translateY(-40vh);
+      font-size: 48px;
+    }
+  }
+}
