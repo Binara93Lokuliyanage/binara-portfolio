@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Reveal from "../reveal";
 
 const words = ["Passionate", "Creative", "Driven"];
 
@@ -38,6 +39,8 @@ const HomeSection = () => {
   return (
     <section id="home" className="col-2 section-padding-top section-padding-bottom">
       <h1>Hi, I’m Binara</h1>
+
+      <Reveal>
 
       <div className="home-section-wrapper">
         <h1>
@@ -105,6 +108,8 @@ const HomeSection = () => {
           </a>
         </div>
       </div>
+
+      </Reveal>
     </section>
   );
 };

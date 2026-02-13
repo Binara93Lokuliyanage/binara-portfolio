@@ -65,6 +65,8 @@
 // }
 
 
+import Footer from "@/components/footer";
+import CtaSection from "@/components/sections/cta";
 import EducationSection from "@/components/sections/education";
 import ExperienceSection from "@/components/sections/experience";
 import HomeSection from "@/components/sections/home";
@@ -81,7 +83,8 @@ export default function Page() {
       <EducationSection />
       <TechStack />
       <ExperienceSection />
-      
+      <CtaSection />
+      <Footer />
     </main>
   );
 }

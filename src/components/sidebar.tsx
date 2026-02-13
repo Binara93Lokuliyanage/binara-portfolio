@@ -19,7 +19,7 @@ const Sidebar = () => {
     { href: "#projects", id: "projects", icon: "projects", alt: "Projects" },
     { href: "#education", id: "education", icon: "education", alt: "Education" },
     { href: "#experience", id: "experience", icon: "experience", alt: "Experience" },
-    { href: "#footer", id: "contact", icon: "contact", alt: "Contact" },
+    { href: "#contacts", id: "contact", icon: "contact", alt: "Contact" },
   ];
 
   /* 🔥 NEW: Observe sections */
