@@ -34,7 +34,7 @@
                 /* 👇 start as circle button */
                 width: 38px;
 
-                transition: width 0.45s cubic-bezier(.76, 0, .24, 1);
+                transition: width 1.2s ease;
 
                 img {
                     width: 16px;
@@ -49,7 +49,7 @@
                     color: var(--black);
                     transition:
                         opacity 0.20s ease 0.15s,
-                        max-width 0.8s cubic-bezier(.76, 0, .24, 1);
+                        max-width 1.2s ease;
                 }
 
                 &:hover {

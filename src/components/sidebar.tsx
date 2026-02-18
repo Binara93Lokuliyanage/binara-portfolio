@@ -19,10 +19,9 @@ const Sidebar = () => {
     { href: "#projects", id: "projects", icon: "projects", alt: "Projects" },
     { href: "#education", id: "education", icon: "education", alt: "Education" },
     { href: "#experience", id: "experience", icon: "experience", alt: "Experience" },
-    { href: "#contacts", id: "contact", icon: "contact", alt: "Contact" },
+    { href: "#contact", id: "contact", icon: "contact", alt: "Contact" },
   ];
 
-  /* 🔥 NEW: Observe sections */
   useEffect(() => {
     const sections = navItems.map(item =>
       document.getElementById(item.id)

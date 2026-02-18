@@ -334,6 +334,7 @@ color: var(--secondary);
 .bullet-section-wrapper {
     display: flex;
     flex-direction: column;
+    // max-width: 900px;
 
     .item {
         display: flex;

@@ -4,8 +4,8 @@ import Reveal from "@/components/reveal";
 
 const CtaSection = () => {
     return (
-        <section id="contacts" className="section-padding-top section-padding-bottom bg-off-white">
-            <div className="container">
+        <section id="contact" className="section-padding-top section-padding-bottom bg-off-white">
+            <div className="container section-padding-bottom">
                 <Reveal>
                     <div className="cta-container card">
                         <div className="img-wrapper">

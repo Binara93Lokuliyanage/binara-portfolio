@@ -18,8 +18,8 @@ const SidebarDark = () => {
     { href: "#skills", id: "skills", icon: "skills-dark", alt: "Skills" },
     { href: "#projects", id: "projects", icon: "projects-dark", alt: "Projects" },
     { href: "#education", id: "education", icon: "education-dark", alt: "Education" },
-    { href: "#experience", id: "experience", icon: "experience-dark", alt: "Experience" },
-    { href: "#footer", id: "contact", icon: "contact-dark", alt: "Contact" },
+    { href: "#testimonials", id: "testimonials", icon: "testi-dark", alt: "Testimonials" },
+    { href: "#contact", id: "contact", icon: "contact-dark", alt: "Contact" },
   ];
 
   /* 🔥 NEW: Observe sections */
