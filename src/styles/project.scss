@@ -1,0 +1,50 @@
+.hero-section {
+    width: 100%;
+    height: 35vh;
+    padding: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.project-container {
+    align-items: flex-start;
+}
+
+.project-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .item {
+        background-color: var(--light-grey);
+    }
+}
+
+.smart-numbers-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .smart-item {
+        border-right: 2px solid var(--dark-grey);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &:last-child {
+            border-right: 0px;
+        }
+
+        h2 {
+            color: var(--secondary);
+        }
+
+        h6 {
+            color: var(--dark-yellow);
+        }
+    }
+}

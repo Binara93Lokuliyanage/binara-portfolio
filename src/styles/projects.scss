@@ -54,20 +54,22 @@
                 }
             }
 
-            .tech-items-wrapper {
-                display: flex;
-                width: 100%;
-                gap: 1rem;
 
-                .item {
-                    padding: 4px 12px;
-                    border-radius: 20px;
-                    background-color: var(--white);
-                    color: var(--primary);
-                    font-size: 14px;
-                }
-            }
         }
+    }
+}
+
+.tech-items-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+
+    .item {
+        padding: 4px 12px;
+        border-radius: 20px;
+        background-color: var(--white);
+        color: var(--primary);
+        font-size: 14px;
     }
 }
 
