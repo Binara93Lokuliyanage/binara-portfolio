@@ -55,8 +55,7 @@ const HomeSection = () => {
         </h1>
 
         <p>
-          I’m Binara Lokuliyanage, a passionate Software Engineer with over 5 years
-          of professional experience in full-stack web development.
+          Software Engineer with 5+ years of experience building scalable web applications and cloud-ready systems. I help teams deliver reliable, production-grade solutions by combining strong technical expertise, clear communication, and a focus on long-term maintainability.
         </p>
 
         <a className="btn-primary">

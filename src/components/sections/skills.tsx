@@ -12,7 +12,7 @@ const SkillsSection = () => {
                 </Reveal>
                 <Reveal delay={0.1}>
                 <p className="description-text">
-                    A versatile full-stack developer blending creative frontends, powerful backends, and seamless DevOps workflows to build scalable digital experiences.
+                    My technical expertise spans full-stack development, cloud-native architectures, and scalable system design.<br /> I focus on building maintainable applications, optimizing performance, and delivering solutions that are reliable in real production environments.
                 </p>
                 </Reveal>
                 

@@ -8,7 +8,7 @@ const ProjectsSection = () => {
                     My <span className="highlight">Projects</span>
                 </h2>
                 <p className="description-text">
-                    A versatile full-stack developer blending creative frontends, powerful backends, and seamless DevOps workflows to build scalable digital experiences.
+                    These projects reflect my experience building scalable web applications and cloud-ready systems. From designing backend APIs to deploying containerized services, each solution demonstrates practical engineering, clean architecture, and a commitment to production-level quality.
                 </p>
                 <div className="projects-wrapper">
                     <div className="card">

@@ -7,11 +7,14 @@ const EducationSection = () => {
                 <h2>
                     My <span className="highlight">Education</span>
                 </h2>
+                <p className="description-text">
+                    My academic journey has strengthened my expertise in modern software engineering, cloud-native architectures, and scalable system design. Combined with over five years of industry experience, it has refined my analytical thinking and reinforced my commitment to building high-quality software solutions.
+                </p>
                 <div className="bullet-section-wrapper padding-top">
                     <div className="item">
                         <div className="bullet-line-wrapper">
                             <div className="bullet-line-invis"></div>
-                            <div className="bullet"></div>
+                            <div className="bullet-blank bullet"></div>
                             <div className="bullet-line"></div>
                         </div>
                         <div className="card edu-card">
