@@ -9,15 +9,37 @@ const ExperienceSection = () => {
         {
             title: "Splashbox Australia",
             role: "Web Developer",
-            duration: "Feb 2023 - June 2024",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna.Pellentesque at ullamcorper arcu. Duis molestie dolor non cursus vulputate. Pellentesque placerat sed metus dapibus posuere. Vivamus aliquam risus eu sem mollis sagittis. Mauris dictum iaculis risus, sit amet iaculis mauris congue eu Vivamus mattis finibus lorem, id vehicula velit tincidunt ac. Vestibulum eu pretium ipsum."
+            duration: "Feb 2023 - Jul 2024",
+            company: "Splashbox (Phacilitate), Australia",
+            responsibilities: [
+                "Delivered 7+ end-to-end web projects for Australian clients using Laravel, React, and Next.js, ensuring high performance, responsiveness, and scalability.",
+                "Contributed to 4-5 additional projects, supporting feature development and enhancements across multiple applications.",
+                "Built custom CMS platforms using Laravel, enabling clients to manage website content independently.",
+                "Developed and customised websites using WordPress custom themes, Shopify, and Webflow, tailored to client requirements.",
+                "Took full ownership of assigned projects, managing the complete development lifecycle from design handover to deployment.",
+                "Optimised SEO and performance through image optimisation, structured content, and best practices, improving usability and search visibility.",
+                "Designed and managed data solutions using MySQL and Supabase.",
+                "Managed multiple projects simultaneously across different tech stacks while maintaining delivery quality.",
+                "Collaborated closely with designers and stakeholders to deliver user-focused solutions aligned with business goals."
+            ]
         },
         {
-            title: "Master of Information Technology",
-            role: "Deakin University Burwood",
-            duration: "June 2024 - June 2026",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna.Pellentesque at ullamcorper arcu. Duis molestie dolor non cursus vulputate. Pellentesque placerat sed metus dapibus posuere. Vivamus aliquam risus eu sem mollis sagittis. Mauris dictum iaculis risus, sit amet iaculis mauris congue eu Vivamus mattis finibus lorem, id vehicula velit tincidunt ac. Vestibulum eu pretium ipsum."
-
+            title: "Raditechs (Pvt) Ltd.",
+            role: "Software Engineer | Team Lead",
+            duration: "Jul 2019 - Jun 2024",
+            responsibilities: [
+                "Developed SaaS-based enterprise applications, including a POS system with integrated accounting and sales management features, with backend services and RESTful APIs built using Laravel (PHP).",
+                "Led development of a payroll system aligned with Sri Lankan government regulations, designing backend logic and API structures to handle complex business rules and data processing.",
+                "Progressed from Frontend Developer (Angular) to Full Stack Developer, and was promoted to Team Lead within 1.5 years based on performance.",
+                "Managed a cross-functional team of 10 developers and QA engineers, ensuring code quality, scalability, and timely delivery.",
+                "Designed and implemented secure, scalable backend architectures using Laravel, including API development, data handling, and system integration.",
+                "Acted as Scrum Master, managing sprints, tracking progress via Jira, and aligning development with business objectives.",
+                "Collaborated with senior stakeholders to define system requirements and translate them into technical solutions.",
+                "Led the full development lifecycle from requirement analysis and system design to implementation and deployment.",
+                "Conducted client product demonstrations and supported onboarding for subscription-based SaaS platforms.",
+                "Built scalable solutions using Angular, PHP (Laravel), and MySQL, with integrations involving Firebase and AWS.",
+                "Improved team efficiency through structured workflows, clear communication, and process optimisation."
+            ]
         },
     ];
 
@@ -59,7 +81,12 @@ const ExperienceSection = () => {
                                     <div className="duration-block">{exp.duration}</div>
 
                                 </div>
-                                <p>{exp.text}</p>
+                                {"company" in exp && exp.company ? <p>{exp.company}</p> : null}
+                                <ul>
+                                    {exp.responsibilities.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     ))}
