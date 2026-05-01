@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { allProjects } from "@/lib/projects";
 
 const ProjectsSection = () => {
     return (
@@ -11,75 +13,42 @@ const ProjectsSection = () => {
                     These projects reflect my experience building scalable web applications and cloud-ready systems. From designing backend APIs to deploying containerized services, each solution demonstrates practical engineering, clean architecture, and a commitment to production-level quality.
                 </p>
                 <div className="projects-wrapper">
-                    <div className="card">
-                        <div className="image-wrapper">
-                            <Image
-                                src="/projects/project-image.png"
-                                alt="Project Image"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                        <div className="details-wrapper">
-                            <h3>DTS Group</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna.</p>
-                            <div className="tech-items-wrapper">
-                                <div className="item">
-                                    HTML
-                                </div>
-                                <div className="item">
-                                    SCSS
-                                </div>
-                            </div>
-                            <a href="#">
-                                Read More
+                    {allProjects.map((project) => (
+                        <article key={project.slug} className="card project-card">
+                            <div className="image-wrapper">
                                 <Image
-                                    src="/icons/btn-arrow-yellow.svg"
-                                    alt="Arrow"
-                                    width={16}
-                                    height={16}
-                                    className="btn-arrow"
+                                    src={project.heroImage}
+                                    alt={project.title}
+                                    width={1000}
+                                    height={1000}
                                 />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <div className="image-wrapper">
-                            <Image
-                                src="/projects/project-image.png"
-                                alt="Project Image"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                        <div className="details-wrapper">
-                            <h3>DTS Group</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna.</p>
-                            <div className="tech-items-wrapper">
-                                <div className="item">
-                                    HTML
-                                </div>
-                                <div className="item">
-                                    SCSS
-                                </div>
                             </div>
-                            <a href="#">
-                                Read More
-                                <Image
-                                    src="/icons/btn-arrow-yellow.svg"
-                                    alt="Arrow"
-                                    width={16}
-                                    height={16}
-                                    className="btn-arrow"
-                                />
-                            </a>
-                        </div>
-                    </div>
+                            <div className="details-wrapper">
+                                <span className="project-category">{project.category}</span>
+                                <h3>{project.title}</h3>
+                                <p>{project.cardDescription}</p>
+                                <div className="tech-items-wrapper">
+                                    {project.techStack.slice(0, 4).map((tech) => (
+                                        <div key={tech} className="item">
+                                            {tech}
+                                        </div>
+                                    ))}
+                                </div>
+                                <Link href={`/professional/project/${project.slug}`}>
+                                    Read More
+                                    <Image
+                                        src="/icons/btn-arrow-yellow.svg"
+                                        alt="Arrow"
+                                        width={16}
+                                        height={16}
+                                        className="btn-arrow"
+                                    />
+                                </Link>
+                            </div>
+                        </article>
+                    ))}
                 </div>
             </div>
-
-
         </section>
     );
 };
