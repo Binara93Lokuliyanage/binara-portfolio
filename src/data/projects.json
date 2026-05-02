@@ -115,13 +115,71 @@
       }
     ]
   },
+  
+  {
+    "slug": "logos-pneuma",
+    "title": "Logos Pneuma Institute",
+    "tagline": "A Laravel-based LMS and CMS platform for managing students, lecturers, courses, assignments, and timed quizzes.",
+    "category": "LMS & CMS Platform",
+    "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/logos-project-video.mp4",
+    "cardDescription": "A complex Laravel platform combining public content management with internal learning management workflows.",
+    "about": [
+      "Logos Pneuma Institute is a full stack Laravel-based education platform combining a public-facing CMS with a Learning Management System.",
+      "The platform supports admins, lecturers, and students with course management, assignments, time-limited quizzes, results, file uploads, and email notifications."
+    ],
+    "techStack": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Blade",
+      "REST APIs",
+      "CMS",
+      "SCSS",
+      "HTML5",
+      "JavaScript"
+    ],
+    "video": {
+      "title": "LMS Overview",
+      "description": "Walkthrough of LMS workflows including roles, courses, quizzes, and assignments.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "contributions": [
+      {
+        "title": "LMS Architecture",
+        "description": "Designed and developed the full LMS structure for students, lecturers, and administrators."
+      },
+      {
+        "title": "Timed Quiz System",
+        "description": "Implemented time-limited quizzes, submissions, and result tracking workflows."
+      },
+      {
+        "title": "Database Recovery",
+        "description": "Rebuilt and stabilised the database structure using migrations and seeders after data loss."
+      }
+    ],
+    "highlights": [
+      {
+        "label": "System",
+        "value": "LMS"
+      },
+      {
+        "label": "Users",
+        "value": "Multi-role"
+      },
+      {
+        "label": "Stack",
+        "value": "Laravel"
+      }
+    ]
+  },
   {
     "slug": "melbourne-open-playground",
     "title": "Melbourne Open Playground",
     "tagline": "A full stack Next.js platform built with scalable APIs, authentication, and structured data workflows.",
     "category": "Full Stack Web Platform",
     "heroImage": "/projects/mop-project-image.png",
-    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
+    "cardVideo": "/projects/videos/card-videos/mop-project-video.mp4",
     "cardDescription": "A modern full stack platform using Next.js and Supabase with authentication, RBAC, and data-driven features.",
     "about": [
       "Melbourne Open Playground is a collaborative full stack platform focused on presenting structured data through a clean and user-friendly experience.",
@@ -167,6 +225,59 @@
       {
         "label": "Focus",
         "value": "APIs + Auth"
+      }
+    ]
+  },
+  
+  {
+    "slug": "bonne-maman",
+    "title": "Bonne Maman",
+    "tagline": "A Shopify eCommerce experience combining product browsing, purchasing, and recipe-driven content engagement.",
+    "category": "Shopify eCommerce",
+    "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
+    "cardDescription": "A Shopify storefront supporting online purchases and recipe-based content for improved customer engagement.",
+    "about": [
+      "Bonne Maman is a Shopify-based eCommerce project focused on presenting products and supporting online purchases.",
+      "The website also included a recipe-style blog section to connect products with food ideas and improve engagement."
+    ],
+    "techStack": [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "SCSS"
+    ],
+    "video": {
+      "title": "Storefront Overview",
+      "description": "Walkthrough of product pages, recipe content, and eCommerce user journey.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "contributions": [
+      {
+        "title": "Shopify Customisation",
+        "description": "Worked on theme customisation and storefront improvements using Shopify and Liquid."
+      },
+      {
+        "title": "Recipe Content Section",
+        "description": "Developed recipe/blog sections to support product-focused content engagement."
+      },
+      {
+        "title": "Responsive Experience",
+        "description": "Improved frontend responsiveness and usability across desktop and mobile devices."
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Platform",
+        "value": "Shopify"
+      },
+      {
+        "label": "Type",
+        "value": "eCommerce"
+      },
+      {
+        "label": "Feature",
+        "value": "Recipes"
       }
     ]
   },
@@ -228,63 +339,6 @@
     ]
   },
   {
-    "slug": "logos-pneuma",
-    "title": "Logos Pneuma Institute",
-    "tagline": "A Laravel-based LMS and CMS platform for managing students, lecturers, courses, assignments, and timed quizzes.",
-    "category": "LMS & CMS Platform",
-    "heroImage": "/projects/project-image.png",
-    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
-    "cardDescription": "A complex Laravel platform combining public content management with internal learning management workflows.",
-    "about": [
-      "Logos Pneuma Institute is a full stack Laravel-based education platform combining a public-facing CMS with a Learning Management System.",
-      "The platform supports admins, lecturers, and students with course management, assignments, time-limited quizzes, results, file uploads, and email notifications."
-    ],
-    "techStack": [
-      "Laravel",
-      "PHP",
-      "MySQL",
-      "Blade",
-      "REST APIs",
-      "CMS",
-      "SCSS",
-      "HTML5",
-      "JavaScript"
-    ],
-    "video": {
-      "title": "LMS Overview",
-      "description": "Walkthrough of LMS workflows including roles, courses, quizzes, and assignments.",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    "contributions": [
-      {
-        "title": "LMS Architecture",
-        "description": "Designed and developed the full LMS structure for students, lecturers, and administrators."
-      },
-      {
-        "title": "Timed Quiz System",
-        "description": "Implemented time-limited quizzes, submissions, and result tracking workflows."
-      },
-      {
-        "title": "Database Recovery",
-        "description": "Rebuilt and stabilised the database structure using migrations and seeders after data loss."
-      }
-    ],
-    "highlights": [
-      {
-        "label": "System",
-        "value": "LMS"
-      },
-      {
-        "label": "Users",
-        "value": "Multi-role"
-      },
-      {
-        "label": "Stack",
-        "value": "Laravel"
-      }
-    ]
-  },
-  {
     "slug": "honan-insurance",
     "title": "Honan Insurance",
     "tagline": "A custom WordPress website with guided user input workflows for insurance policy generation.",
@@ -335,58 +389,6 @@
       {
         "label": "Role",
         "value": "End-to-End"
-      }
-    ]
-  },
-  {
-    "slug": "bonne-maman",
-    "title": "Bonne Maman",
-    "tagline": "A Shopify eCommerce experience combining product browsing, purchasing, and recipe-driven content engagement.",
-    "category": "Shopify eCommerce",
-    "heroImage": "/projects/project-image.png",
-    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
-    "cardDescription": "A Shopify storefront supporting online purchases and recipe-based content for improved customer engagement.",
-    "about": [
-      "Bonne Maman is a Shopify-based eCommerce project focused on presenting products and supporting online purchases.",
-      "The website also included a recipe-style blog section to connect products with food ideas and improve engagement."
-    ],
-    "techStack": [
-      "Shopify",
-      "Liquid",
-      "JavaScript",
-      "SCSS"
-    ],
-    "video": {
-      "title": "Storefront Overview",
-      "description": "Walkthrough of product pages, recipe content, and eCommerce user journey.",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    "contributions": [
-      {
-        "title": "Shopify Customisation",
-        "description": "Worked on theme customisation and storefront improvements using Shopify and Liquid."
-      },
-      {
-        "title": "Recipe Content Section",
-        "description": "Developed recipe/blog sections to support product-focused content engagement."
-      },
-      {
-        "title": "Responsive Experience",
-        "description": "Improved frontend responsiveness and usability across desktop and mobile devices."
-      }
-    ],
-    "highlights": [
-      {
-        "label": "Platform",
-        "value": "Shopify"
-      },
-      {
-        "label": "Type",
-        "value": "eCommerce"
-      },
-      {
-        "label": "Feature",
-        "value": "Recipes"
       }
     ]
   },
