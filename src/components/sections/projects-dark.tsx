@@ -1,6 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
+import ProjectCard from "@/components/project-card";
+import { allProjects } from "@/lib/projects";
 
 const ProjectsDarkSection = () => {
+    const featuredProjects = allProjects.slice(0, 4);
+
     return (
         <section id="projects" className="section-padding-top section-padding-bottom freelancer-dark bg-dark">
             <div className="container text-center">
@@ -11,72 +16,25 @@ const ProjectsDarkSection = () => {
                     A versatile full-stack developer blending creative frontends, powerful backends, and seamless DevOps workflows to build scalable digital experiences.
                 </p>
                 <div className="projects-wrapper">
-                    <div className="card">
-                        <div className="image-wrapper">
-                            <Image
-                                src="/projects/project-image.png"
-                                alt="Project Image"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                        <div className="details-wrapper">
-                            <h3>DTS Group</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna.</p>
-                            <div className="tech-items-wrapper">
-                                <div className="item">
-                                    HTML
-                                </div>
-                                <div className="item">
-                                    SCSS
-                                </div>
-                            </div>
-                            <a href="#">
-                                Read More
-                                <Image
-                                    src="/icons/btn-arrow-yellow.svg"
-                                    alt="Arrow"
-                                    width={16}
-                                    height={16}
-                                    className="btn-arrow"
-                                />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        <div className="image-wrapper">
-                            <Image
-                                src="/projects/project-image.png"
-                                alt="Project Image"
-                                width={1000}
-                                height={1000}
-                            />
-                        </div>
-                        <div className="details-wrapper">
-                            <h3>DTS Group</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna.</p>
-                            <div className="tech-items-wrapper">
-                                <div className="item">
-                                    HTML
-                                </div>
-                                <div className="item">
-                                    SCSS
-                                </div>
-                            </div>
-                            <a href="#">
-                                Read More
-                                <Image
-                                    src="/icons/btn-arrow-yellow.svg"
-                                    alt="Arrow"
-                                    width={16}
-                                    height={16}
-                                    className="btn-arrow"
-                                />
-                            </a>
-                        </div>
-                    </div>
+                    {featuredProjects.map((project) => (
+                        <ProjectCard
+                            key={project.slug}
+                            project={project}
+                            showVideo
+                            hrefBase="/freelancer/projects"
+                        />
+                    ))}
                 </div>
+                <Link href="/freelancer/projects" className="btn-primary projects-show-all">
+                    Show All
+                    <Image
+                        src="/icons/btn-arrow.svg"
+                        alt="Arrow"
+                        width={16}
+                        height={16}
+                        className="btn-arrow"
+                    />
+                </Link>
             </div>
 
 

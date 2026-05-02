@@ -14,7 +14,8 @@
             height: 190px;
 
 
-            img {
+            img,
+            video {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -70,6 +71,50 @@
     }
 }
 
+.projects-show-all {
+    margin-top: 2rem;
+}
+
+.all-projects-section {
+    .container {
+        align-items: stretch;
+
+        h1,
+        p {
+            align-self: center;
+        }
+    }
+}
+
+.project-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    padding-top: 2rem;
+
+    button {
+        padding: 0.7rem 1.1rem;
+        border: 1px solid rgba(43, 43, 43, 0.16);
+        border-radius: 999px;
+        background-color: var(--white);
+        color: var(--secondary);
+        font: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        cursor: pointer;
+        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+
+        &:hover,
+        &.active {
+            border-color: var(--primary);
+            background-color: var(--primary);
+            color: var(--secondary);
+        }
+    }
+}
+
 .tech-items-wrapper {
     display: flex;
     width: 100%;
@@ -86,6 +131,25 @@
 }
 
 .freelancer-dark {
+    &.all-projects-section {
+        min-height: 100vh;
+    }
+
+    .project-filter {
+        button {
+            border-color: var(--dark-grey);
+            background-color: var(--secondary-black);
+            color: var(--off-white);
+
+            &:hover,
+            &.active {
+                border-color: var(--primary);
+                background-color: var(--primary);
+                color: var(--secondary);
+            }
+        }
+    }
+
     .projects-wrapper {
         .card {
             background-color: var(--secondary-black);
