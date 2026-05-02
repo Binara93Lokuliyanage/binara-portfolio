@@ -5,9 +5,14 @@ import type { Project } from "@/lib/projects";
 type ProjectCardProps = {
   project: Project;
   showVideo?: boolean;
+  hrefBase?: string;
 };
 
-const ProjectCard = ({ project, showVideo = false }: ProjectCardProps) => {
+const ProjectCard = ({
+  project,
+  showVideo = false,
+  hrefBase = "/professional/projects",
+}: ProjectCardProps) => {
   return (
     <article className="card project-card">
       <div className="image-wrapper">
@@ -36,7 +41,7 @@ const ProjectCard = ({ project, showVideo = false }: ProjectCardProps) => {
             </div>
           ))}
         </div>
-        <Link href={`/professional/project/${project.slug}`}>
+        <Link href={`${hrefBase}/${project.slug}`}>
           Read More
           <Image
             src="/icons/btn-arrow-yellow.svg"

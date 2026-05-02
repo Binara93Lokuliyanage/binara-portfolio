@@ -17,7 +17,12 @@ const ProjectsSection = () => {
                 </p>
                 <div className="projects-wrapper">
                     {featuredProjects.map((project) => (
-                        <ProjectCard key={project.slug} project={project} showVideo />
+                        <ProjectCard
+                            key={project.slug}
+                            project={project}
+                            showVideo
+                            hrefBase="/professional/projects"
+                        />
                     ))}
                 </div>
                 <Link href="/professional/projects" className="btn-primary projects-show-all">

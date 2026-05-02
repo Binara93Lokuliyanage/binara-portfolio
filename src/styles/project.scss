@@ -186,6 +186,33 @@
     }
 }
 
+.project-detail-dark {
+    .project-highlight-card {
+        border-color: var(--dark-grey);
+        background: var(--secondary-black);
+
+        span {
+            color: var(--primary);
+        }
+    }
+
+    .project-tech-items {
+        .item {
+            background-color: var(--secondary-black);
+            color: var(--primary);
+        }
+    }
+
+    .project-contribution-card {
+        border-color: var(--dark-grey);
+        background-color: var(--secondary-black);
+    }
+
+    .project-video-frame {
+        border-color: var(--dark-grey);
+    }
+}
+
 @media screen and (max-width: 991px) {
     .project-hero-section {
         min-height: 62vh;

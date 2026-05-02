@@ -1,6 +1,6 @@
 import Footer from "@/components/footer";
 import ProjectFilter from "@/components/project-filter";
-import CtaSection from "@/components/sections/cta";
+import FormDarkSection from "@/components/sections/form-dark";
 import { allProjects } from "@/lib/projects";
 
 const getTechStacks = () => {
@@ -8,10 +8,10 @@ const getTechStacks = () => {
   return Array.from(new Set(techStacks)).sort((a, b) => a.localeCompare(b));
 };
 
-export default function ProjectsPage() {
+export default function FreelancerProjectsPage() {
   return (
     <main>
-      <section className="section-padding-top section-padding-bottom all-projects-section">
+      <section className="section-padding-top section-padding-bottom all-projects-section freelancer-dark bg-dark">
         <div className="container text-center">
           <h1>
             All <span className="highlight">Projects</span>
@@ -22,11 +22,11 @@ export default function ProjectsPage() {
           <ProjectFilter
             projects={allProjects}
             techStacks={getTechStacks()}
-            projectHrefBase="/professional/projects"
+            projectHrefBase="/freelancer/projects"
           />
         </div>
       </section>
-      <CtaSection />
+      <FormDarkSection />
       <Footer />
     </main>
   );

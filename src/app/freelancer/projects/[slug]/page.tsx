@@ -14,7 +14,7 @@ export function generateStaticParams() {
   }));
 }
 
-export default async function ProjectPage({ params }: ProjectPageProps) {
+export default async function FreelancerProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
 
@@ -22,5 +22,5 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     notFound();
   }
 
-  return <ProjectDetailPage project={project} />;
+  return <ProjectDetailPage project={project} variant="freelancer" />;
 }

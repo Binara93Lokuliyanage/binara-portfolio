@@ -121,7 +121,7 @@
     "title": "Logos Pneuma Institute",
     "tagline": "A Laravel-based LMS and CMS platform for managing students, lecturers, courses, assignments, and timed quizzes.",
     "category": "LMS & CMS Platform",
-    "heroImage": "/projects/project-image.png",
+    "heroImage": "/projects/logos-project-image.png",
     "cardVideo": "/projects/videos/card-videos/logos-project-video.mp4",
     "cardDescription": "A complex Laravel platform combining public content management with internal learning management workflows.",
     "about": [
@@ -234,7 +234,7 @@
     "title": "Bonne Maman",
     "tagline": "A Shopify eCommerce experience combining product browsing, purchasing, and recipe-driven content engagement.",
     "category": "Shopify eCommerce",
-    "heroImage": "/projects/project-image.png",
+    "heroImage": "/projects/bonnemaman-project-image.png",
     "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "A Shopify storefront supporting online purchases and recipe-based content for improved customer engagement.",
     "about": [
@@ -343,7 +343,7 @@
     "title": "Honan Insurance",
     "tagline": "A custom WordPress website with guided user input workflows for insurance policy generation.",
     "category": "WordPress Website",
-    "heroImage": "/projects/project-image.png",
+    "heroImage": "/projects/honan-project-image.png",
     "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "A full website build involving custom WordPress development, UX design, and dynamic policy generation workflows.",
     "about": [
@@ -397,7 +397,7 @@
     "title": "Lonsdale Institute",
     "tagline": "An education platform supporting course management, online registration, and learning workflows.",
     "category": "Education Platform",
-    "heroImage": "/projects/project-image.png",
+    "heroImage": "/projects/lonsdale-project-image.png",
     "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "An education-focused platform enabling course listings, registration workflows, and online learning support.",
     "about": [
@@ -449,7 +449,7 @@
     "title": "Dual Flow Plumbing",
     "tagline": "A clean Webflow business website designed to present plumbing services clearly and professionally.",
     "category": "Webflow Website",
-    "heroImage": "/projects/project-image.png",
+    "heroImage": "/projects/no-project-image.jpg",
     "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "A responsive Webflow website focused on service presentation, brand trust, and simple user navigation.",
     "about": [
@@ -501,7 +501,7 @@
     "title": "QuickHRM",
     "tagline": "A payroll SaaS system designed to manage complex salary structures and regulatory compliance.",
     "category": "Payroll SaaS Platform",
-    "heroImage": "/projects/project-image.png",
+    "heroImage": "/projects/no-project-image.jpg",
     "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "A full stack payroll system supporting employee management, salary calculations, and compliance workflows.",
     "about": [
@@ -561,7 +561,7 @@
     "title": "The Render Crew",
     "tagline": "A business website built to showcase services and generate leads through a clean, user-friendly interface.",
     "category": "Business Website",
-    "heroImage": "/projects/project-image.png",
+    "heroImage": "/projects/render-project-image.png",
     "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "A Laravel-based business website with service presentation and contact form functionality for lead generation.",
     "about": [
@@ -612,5 +612,60 @@
         "value": "Business Website"
       }
     ]
-  }
+  },
+  {
+  "slug": "vibrant-insights",
+  "title": "Vibrant Insights",
+  "tagline": "A modern Webflow website designed to present services with clarity, strong branding, and user-focused layout.",
+  "category": "Business Website",
+  "heroImage": "/projects/vibrant-project-image.png",
+  "cardDescription": "A fully developed Webflow website focused on clean design, structured content, and responsive user experience.",
+  "about": [
+    "Vibrant Insights is a business website developed using Webflow, designed to clearly present services and create a strong online presence.",
+    "The project focused on clean layout design, structured content, and responsive behaviour to ensure a consistent experience across devices."
+  ],
+  "techStack": [
+    "Webflow",
+    "HTML5",
+    "CSS",
+    "JavaScript"
+  ],
+  "video": {
+    "title": "Website Overview",
+    "description": "Overview of layout, design structure, and responsive behaviour.",
+    "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  "contributions": [
+    {
+      "title": "Full Website Development",
+      "description": "Built the entire website using Webflow, handling layout, structure, and implementation."
+    },
+    {
+      "title": "Responsive Design",
+      "description": "Ensured the website is fully responsive across desktop, tablet, and mobile devices."
+    },
+    {
+      "title": "Content Structuring",
+      "description": "Organised content to clearly communicate services and improve user experience."
+    },
+    {
+      "title": "UI/UX Implementation",
+      "description": "Translated design requirements into a clean and user-friendly interface."
+    }
+  ],
+  "highlights": [
+    {
+      "label": "Platform",
+      "value": "Webflow"
+    },
+    {
+      "label": "Role",
+      "value": "Full Build"
+    },
+    {
+      "label": "Focus",
+      "value": "UI/UX"
+    }
+  ]
+}
 ]

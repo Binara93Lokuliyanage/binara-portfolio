@@ -67,7 +67,7 @@ const Sidebar = () => {
         }}
       >
         {/* Hidden logo */}
-        <a href = "freelancer" className={`logo ${isLogoHovered ? "logo-show" : "logo-hidden"}`}>
+        <a href = "/freelancer" className={`logo ${isLogoHovered ? "logo-show" : "logo-hidden"}`}>
           <img src="/logo.jpg" alt="Logo" />
         </a>
 

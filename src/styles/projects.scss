@@ -131,6 +131,25 @@
 }
 
 .freelancer-dark {
+    &.all-projects-section {
+        min-height: 100vh;
+    }
+
+    .project-filter {
+        button {
+            border-color: var(--dark-grey);
+            background-color: var(--secondary-black);
+            color: var(--off-white);
+
+            &:hover,
+            &.active {
+                border-color: var(--primary);
+                background-color: var(--primary);
+                color: var(--secondary);
+            }
+        }
+    }
+
     .projects-wrapper {
         .card {
             background-color: var(--secondary-black);

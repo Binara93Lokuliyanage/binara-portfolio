@@ -7,9 +7,14 @@ import ProjectCard from "@/components/project-card";
 type ProjectFilterProps = {
   projects: Project[];
   techStacks: string[];
+  projectHrefBase?: string;
 };
 
-const ProjectFilter = ({ projects, techStacks }: ProjectFilterProps) => {
+const ProjectFilter = ({
+  projects,
+  techStacks,
+  projectHrefBase,
+}: ProjectFilterProps) => {
   const [selectedTech, setSelectedTech] = useState<string[]>([]);
 
   const filteredProjects = useMemo(() => {
@@ -57,7 +62,7 @@ const ProjectFilter = ({ projects, techStacks }: ProjectFilterProps) => {
 
       <div className="projects-wrapper">
         {filteredProjects.map((project) => (
-          <ProjectCard key={project.slug} project={project} />
+          <ProjectCard key={project.slug} project={project} hrefBase={projectHrefBase} />
         ))}
       </div>
     </>
