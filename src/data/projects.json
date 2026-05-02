@@ -1,127 +1,26 @@
 [
-  {
-    "slug": "melbourne-open-playground",
-    "title": "Melbourne Open Playground",
-    "tagline": "A full stack Next.js platform built with scalable APIs, authentication, and structured data workflows.",
-    "category": "Full Stack Web Platform",
-    "heroImage": "/projects/project-image.png",
-    "cardDescription": "A modern full stack platform using Next.js and Supabase with authentication, RBAC, and data-driven features.",
-    "about": [
-      "Melbourne Open Playground is a collaborative full stack platform focused on presenting structured data through a clean and user-friendly experience.",
-      "As Backend and Technical Lead, I contributed to architecture, API design, authentication, role-based access control, and frontend/backend integration."
-    ],
-    "techStack": ["Next.js", "React", "Node.js", "Supabase", "PostgreSQL"],
-    "video": {
-      "title": "Platform Demo",
-      "description": "Walkthrough of platform features and backend-driven workflows.",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    "contributions": [
-      {
-        "title": "Technical Leadership",
-        "description": "Led backend planning and guided architecture decisions for scalable full stack delivery."
-      },
-      {
-        "title": "Authentication & RBAC",
-        "description": "Implemented secure authentication and role-based access control for different user types."
-      },
-      {
-        "title": "API & Data Design",
-        "description": "Designed backend APIs and structured data models using Supabase and PostgreSQL."
-      }
-    ],
-    "highlights": [
-      { "label": "Role", "value": "Tech Lead" },
-      { "label": "Stack", "value": "Next.js" },
-      { "label": "Focus", "value": "APIs + Auth" }
-    ]
-  },
-  {
-    "slug": "medtrack",
-    "title": "MedTrack",
-    "tagline": "A cloud-native full stack application built with React, Node.js, MongoDB, Docker, and Kubernetes.",
-    "category": "Cloud-Native Application",
-    "heroImage": "/projects/project-image.png",
-    "cardDescription": "A full stack academic project demonstrating modern deployment practices using Docker and Kubernetes.",
-    "about": [
-      "MedTrack was developed as a full stack application using React on the frontend and Node.js on the backend.",
-      "The project focused on containerisation and cloud-native deployment, using MongoDB for data storage and Kubernetes for orchestration."
-    ],
-    "techStack": ["React", "Node.js", "MongoDB", "Docker", "Kubernetes", "GKE"],
-    "video": {
-      "title": "Cloud Deployment Demo",
-      "description": "Overview of application structure, containerisation, and deployment workflow.",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    "contributions": [
-      {
-        "title": "Full Stack Development",
-        "description": "Built frontend and backend application layers using React, Node.js, and MongoDB."
-      },
-      {
-        "title": "Containerisation",
-        "description": "Containerised application components using Docker for consistent deployment."
-      },
-      {
-        "title": "Kubernetes Deployment",
-        "description": "Deployed and managed the application using Kubernetes on Google Kubernetes Engine."
-      }
-    ],
-    "highlights": [
-      { "label": "Type", "value": "Cloud Native" },
-      { "label": "Deployment", "value": "Kubernetes" },
-      { "label": "Database", "value": "MongoDB" }
-    ]
-  },
-  {
-    "slug": "logos-pneuma",
-    "title": "Logos Pneuma Institute",
-    "tagline": "A Laravel-based LMS and CMS platform for managing students, lecturers, courses, assignments, and timed quizzes.",
-    "category": "LMS & CMS Platform",
-    "heroImage": "/projects/project-image.png",
-    "cardDescription": "A complex Laravel platform combining public content management with internal learning management workflows.",
-    "about": [
-      "Logos Pneuma Institute is a full stack Laravel-based education platform combining a public-facing CMS with a Learning Management System.",
-      "The platform supports admins, lecturers, and students with course management, assignments, time-limited quizzes, results, file uploads, and email notifications."
-    ],
-    "techStack": ["Laravel", "PHP", "MySQL", "Blade", "REST APIs"],
-    "video": {
-      "title": "LMS Overview",
-      "description": "Walkthrough of LMS workflows including roles, courses, quizzes, and assignments.",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    "contributions": [
-      {
-        "title": "LMS Architecture",
-        "description": "Designed and developed the full LMS structure for students, lecturers, and administrators."
-      },
-      {
-        "title": "Timed Quiz System",
-        "description": "Implemented time-limited quizzes, submissions, and result tracking workflows."
-      },
-      {
-        "title": "Database Recovery",
-        "description": "Rebuilt and stabilised the database structure using migrations and seeders after data loss."
-      }
-    ],
-    "highlights": [
-      { "label": "System", "value": "LMS" },
-      { "label": "Users", "value": "Multi-role" },
-      { "label": "Stack", "value": "Laravel" }
-    ]
-  },
+  
   {
     "slug": "dts-group",
     "title": "DTS Group",
     "tagline": "A Laravel-based custom CMS platform designed for flexible content management and professional service presentation.",
     "category": "Custom CMS",
     "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "A custom Laravel CMS enabling non-technical users to manage website content independently.",
     "about": [
       "DTS Group required a custom CMS solution to manage website content without relying on a third-party CMS platform.",
       "The project focused on building a scalable Laravel-based backend with a clean content management workflow and user-friendly admin experience."
     ],
-    "techStack": ["Laravel", "PHP", "MySQL", "HTML5", "SCSS"],
+    "techStack": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "SCSS",
+      "CMS",
+      "JavaScript"
+    ],
     "video": {
       "title": "CMS Demo",
       "description": "Overview of custom CMS features and content management workflows.",
@@ -142,9 +41,247 @@
       }
     ],
     "highlights": [
-      { "label": "Platform", "value": "Laravel CMS" },
-      { "label": "Role", "value": "Full Stack" },
-      { "label": "Focus", "value": "Content Control" }
+      {
+        "label": "Platform",
+        "value": "Laravel CMS"
+      },
+      {
+        "label": "Role",
+        "value": "Full Stack"
+      },
+      {
+        "label": "Focus",
+        "value": "Content Control"
+      }
+    ]
+  },
+  {
+    "slug": "oyrus-pos",
+    "title": "Oyrus",
+    "tagline": "An enterprise SaaS platform combining POS, accounting, and analytics for real-time business operations.",
+    "category": "Enterprise SaaS Platform",
+    "heroImage": "/projects/oyrus-project-image.png",
+    "cardVideo": "/projects/videos/card-videos/oyrus-project-video.mp4",
+    "cardDescription": "A full stack POS and accounting SaaS platform supporting transactions, inventory, and financial reporting.",
+    "about": [
+      "Oyrus is an enterprise SaaS platform designed to handle Point-of-Sale (POS), accounting, and business analytics within a unified system.",
+      "The platform enables real-time transaction processing, inventory management, and financial reporting to support daily business operations."
+    ],
+    "techStack": [
+      "Angular",
+      "TypeScript",
+      "PHP",
+      "REST APIs",
+      "MySQL",
+      "AWS (EC2, S3)",
+      "HTML5",
+      "CSS"
+    ],
+    "video": {
+      "title": "Platform Overview",
+      "description": "Walkthrough of POS workflows, reporting, and system features.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "contributions": [
+      {
+        "title": "Full Stack Development",
+        "description": "Developed both frontend (Angular, TypeScript) and backend services (PHP REST APIs) for core system functionality."
+      },
+      {
+        "title": "Technical Leadership",
+        "description": "Led a team of developers, guiding architecture decisions, task allocation, and ensuring high-quality delivery."
+      },
+      {
+        "title": "API & System Design",
+        "description": "Designed and implemented RESTful APIs to support transactions, inventory, and reporting workflows."
+      },
+      {
+        "title": "Cloud Integration",
+        "description": "Worked with AWS services including EC2 for hosting and S3 for file storage and system assets."
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Role",
+        "value": "Full Stack Lead"
+      },
+      {
+        "label": "Stack",
+        "value": "Angular + PHP"
+      },
+      {
+        "label": "Focus",
+        "value": "POS + Accounting"
+      }
+    ]
+  },
+  {
+    "slug": "melbourne-open-playground",
+    "title": "Melbourne Open Playground",
+    "tagline": "A full stack Next.js platform built with scalable APIs, authentication, and structured data workflows.",
+    "category": "Full Stack Web Platform",
+    "heroImage": "/projects/mop-project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
+    "cardDescription": "A modern full stack platform using Next.js and Supabase with authentication, RBAC, and data-driven features.",
+    "about": [
+      "Melbourne Open Playground is a collaborative full stack platform focused on presenting structured data through a clean and user-friendly experience.",
+      "As Backend and Technical Lead, I contributed to architecture, API design, authentication, role-based access control, and frontend/backend integration."
+    ],
+    "techStack": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "Supabase",
+      "PostgreSQL",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "video": {
+      "title": "Platform Demo",
+      "description": "Walkthrough of platform features and backend-driven workflows.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "contributions": [
+      {
+        "title": "Technical Leadership",
+        "description": "Led backend planning and guided architecture decisions for scalable full stack delivery."
+      },
+      {
+        "title": "Authentication & RBAC",
+        "description": "Implemented secure authentication and role-based access control for different user types."
+      },
+      {
+        "title": "API & Data Design",
+        "description": "Designed backend APIs and structured data models using Supabase and PostgreSQL."
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Role",
+        "value": "Tech Lead"
+      },
+      {
+        "label": "Stack",
+        "value": "Next.js"
+      },
+      {
+        "label": "Focus",
+        "value": "APIs + Auth"
+      }
+    ]
+  },
+  {
+    "slug": "medtrack",
+    "title": "MedTrack",
+    "tagline": "A cloud-native full stack application built with React, Node.js, MongoDB, Docker, and Kubernetes.",
+    "category": "Cloud-Native Application",
+    "heroImage": "/projects/medtrack-project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
+    "cardDescription": "A full stack academic project demonstrating modern deployment practices using Docker and Kubernetes.",
+    "about": [
+      "MedTrack was developed as a full stack application using React on the frontend and Node.js on the backend.",
+      "The project focused on containerisation and cloud-native deployment, using MongoDB for data storage and Kubernetes for orchestration."
+    ],
+    "techStack": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Docker",
+      "Kubernetes",
+      "GKE",
+      "HTML5",
+      "JavaScript",
+      "SCSS"
+    ],
+    "video": {
+      "title": "Cloud Deployment Demo",
+      "description": "Overview of application structure, containerisation, and deployment workflow.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "contributions": [
+      {
+        "title": "Full Stack Development",
+        "description": "Built frontend and backend application layers using React, Node.js, and MongoDB."
+      },
+      {
+        "title": "Containerisation",
+        "description": "Containerised application components using Docker for consistent deployment."
+      },
+      {
+        "title": "Kubernetes Deployment",
+        "description": "Deployed and managed the application using Kubernetes on Google Kubernetes Engine."
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Type",
+        "value": "Cloud Native"
+      },
+      {
+        "label": "Deployment",
+        "value": "Kubernetes"
+      },
+      {
+        "label": "Database",
+        "value": "MongoDB"
+      }
+    ]
+  },
+  {
+    "slug": "logos-pneuma",
+    "title": "Logos Pneuma Institute",
+    "tagline": "A Laravel-based LMS and CMS platform for managing students, lecturers, courses, assignments, and timed quizzes.",
+    "category": "LMS & CMS Platform",
+    "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
+    "cardDescription": "A complex Laravel platform combining public content management with internal learning management workflows.",
+    "about": [
+      "Logos Pneuma Institute is a full stack Laravel-based education platform combining a public-facing CMS with a Learning Management System.",
+      "The platform supports admins, lecturers, and students with course management, assignments, time-limited quizzes, results, file uploads, and email notifications."
+    ],
+    "techStack": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Blade",
+      "REST APIs",
+      "CMS",
+      "SCSS",
+      "HTML5",
+      "JavaScript"
+    ],
+    "video": {
+      "title": "LMS Overview",
+      "description": "Walkthrough of LMS workflows including roles, courses, quizzes, and assignments.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "contributions": [
+      {
+        "title": "LMS Architecture",
+        "description": "Designed and developed the full LMS structure for students, lecturers, and administrators."
+      },
+      {
+        "title": "Timed Quiz System",
+        "description": "Implemented time-limited quizzes, submissions, and result tracking workflows."
+      },
+      {
+        "title": "Database Recovery",
+        "description": "Rebuilt and stabilised the database structure using migrations and seeders after data loss."
+      }
+    ],
+    "highlights": [
+      {
+        "label": "System",
+        "value": "LMS"
+      },
+      {
+        "label": "Users",
+        "value": "Multi-role"
+      },
+      {
+        "label": "Stack",
+        "value": "Laravel"
+      }
     ]
   },
   {
@@ -153,12 +290,20 @@
     "tagline": "A custom WordPress website with guided user input workflows for insurance policy generation.",
     "category": "WordPress Website",
     "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "A full website build involving custom WordPress development, UX design, and dynamic policy generation workflows.",
     "about": [
       "Honan Insurance was a custom WordPress-based website developed end-to-end for an Australian client.",
       "The project included UX-focused workflows that allowed users to input information and generate insurance policy-related outputs dynamically."
     ],
-    "techStack": ["WordPress", "PHP", "JavaScript", "HTML5", "SCSS"],
+    "techStack": [
+      "WordPress",
+      "PHP",
+      "JavaScript",
+      "HTML5",
+      "SCSS",
+      "CMS"
+    ],
     "video": {
       "title": "Website Walkthrough",
       "description": "Overview of user workflows, content structure, and responsive experience.",
@@ -179,9 +324,18 @@
       }
     ],
     "highlights": [
-      { "label": "Platform", "value": "WordPress" },
-      { "label": "Feature", "value": "Policy Flow" },
-      { "label": "Role", "value": "End-to-End" }
+      {
+        "label": "Platform",
+        "value": "WordPress"
+      },
+      {
+        "label": "Feature",
+        "value": "Policy Flow"
+      },
+      {
+        "label": "Role",
+        "value": "End-to-End"
+      }
     ]
   },
   {
@@ -190,12 +344,18 @@
     "tagline": "A Shopify eCommerce experience combining product browsing, purchasing, and recipe-driven content engagement.",
     "category": "Shopify eCommerce",
     "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "A Shopify storefront supporting online purchases and recipe-based content for improved customer engagement.",
     "about": [
       "Bonne Maman is a Shopify-based eCommerce project focused on presenting products and supporting online purchases.",
       "The website also included a recipe-style blog section to connect products with food ideas and improve engagement."
     ],
-    "techStack": ["Shopify", "Liquid", "JavaScript", "SCSS"],
+    "techStack": [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "SCSS"
+    ],
     "video": {
       "title": "Storefront Overview",
       "description": "Walkthrough of product pages, recipe content, and eCommerce user journey.",
@@ -216,9 +376,18 @@
       }
     ],
     "highlights": [
-      { "label": "Platform", "value": "Shopify" },
-      { "label": "Type", "value": "eCommerce" },
-      { "label": "Feature", "value": "Recipes" }
+      {
+        "label": "Platform",
+        "value": "Shopify"
+      },
+      {
+        "label": "Type",
+        "value": "eCommerce"
+      },
+      {
+        "label": "Feature",
+        "value": "Recipes"
+      }
     ]
   },
   {
@@ -227,12 +396,18 @@
     "tagline": "An education platform supporting course management, online registration, and learning workflows.",
     "category": "Education Platform",
     "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "An education-focused platform enabling course listings, registration workflows, and online learning support.",
     "about": [
       "Lonsdale Institute was developed as an education-focused platform where the client could manage and publish courses.",
       "The platform supported online course registration, Telegram gateway integration, and online learning-style content workflows."
     ],
-    "techStack": ["Shopify", "Liquid", "JavaScript", "SCSS"],
+    "techStack": [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "SCSS"
+    ],
     "video": {
       "title": "Education Website Demo",
       "description": "Overview of course listings, registration flow, and content management.",
@@ -253,9 +428,18 @@
       }
     ],
     "highlights": [
-      { "label": "Type", "value": "Education" },
-      { "label": "Platform", "value": "Shopify" },
-      { "label": "Feature", "value": "Registration" }
+      {
+        "label": "Type",
+        "value": "Education"
+      },
+      {
+        "label": "Platform",
+        "value": "Shopify"
+      },
+      {
+        "label": "Feature",
+        "value": "Registration"
+      }
     ]
   },
   {
@@ -264,12 +448,18 @@
     "tagline": "A clean Webflow business website designed to present plumbing services clearly and professionally.",
     "category": "Webflow Website",
     "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
     "cardDescription": "A responsive Webflow website focused on service presentation, brand trust, and simple user navigation.",
     "about": [
       "Dual Flow Plumbing was an informative business website built using Webflow to present services clearly and professionally.",
       "The project focused on responsive design, clean content structure, and an easy-to-navigate experience for potential customers."
     ],
-    "techStack": ["Webflow", "HTML", "CSS"],
+    "techStack": [
+      "Webflow",
+      "HTML5",
+      "CSS",
+      "JavaScript"
+    ],
     "video": {
       "title": "Website Overview",
       "description": "Overview of service sections, responsive layout, and business presentation.",
@@ -290,9 +480,135 @@
       }
     ],
     "highlights": [
-      { "label": "Platform", "value": "Webflow" },
-      { "label": "Type", "value": "Business Site" },
-      { "label": "Focus", "value": "Responsive" }
+      {
+        "label": "Platform",
+        "value": "Webflow"
+      },
+      {
+        "label": "Type",
+        "value": "Business Site"
+      },
+      {
+        "label": "Focus",
+        "value": "Responsive"
+      }
+    ]
+  },
+  {
+    "slug": "quickhrm",
+    "title": "QuickHRM",
+    "tagline": "A payroll SaaS system designed to manage complex salary structures and regulatory compliance.",
+    "category": "Payroll SaaS Platform",
+    "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
+    "cardDescription": "A full stack payroll system supporting employee management, salary calculations, and compliance workflows.",
+    "about": [
+      "QuickHRM is a payroll SaaS platform built to handle complex salary calculations and regulatory compliance based on Sri Lankan government rules.",
+      "The system supports employee management, payroll processing, tax calculations, and automated salary workflows."
+    ],
+    "techStack": [
+      "Angular",
+      "TypeScript",
+      "PHP",
+      "REST APIs",
+      "MySQL",
+      "AWS (EC2, S3)",
+      "HTML5",
+      "CSS"
+    ],
+    "video": {
+      "title": "Payroll System Overview",
+      "description": "Overview of payroll workflows, calculations, and system functionality.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "contributions": [
+      {
+        "title": "Full Stack Development",
+        "description": "Developed frontend using Angular and TypeScript and backend services using PHP REST APIs."
+      },
+      {
+        "title": "Technical Leadership",
+        "description": "Led development efforts, coordinating tasks and ensuring system quality and timely delivery."
+      },
+      {
+        "title": "Payroll Logic Implementation",
+        "description": "Implemented salary calculations, tax rules, deductions, and payroll workflows based on regulatory requirements."
+      },
+      {
+        "title": "API Integration & System Design",
+        "description": "Designed and integrated RESTful APIs for employee management, payroll processing, and reporting."
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Role",
+        "value": "Full Stack Lead"
+      },
+      {
+        "label": "Stack",
+        "value": "Angular + PHP"
+      },
+      {
+        "label": "Focus",
+        "value": "Payroll + Compliance"
+      }
+    ]
+  },
+  {
+    "slug": "the-render-crew",
+    "title": "The Render Crew",
+    "tagline": "A business website built to showcase services and generate leads through a clean, user-friendly interface.",
+    "category": "Business Website",
+    "heroImage": "/projects/project-image.png",
+    "cardVideo": "/projects/videos/card-videos/project-video.mp4",
+    "cardDescription": "A Laravel-based business website with service presentation and contact form functionality for lead generation.",
+    "about": [
+      "The Render Crew is a business website developed for an Australian client in the construction industry, focusing on solid plastering and rendering services.",
+      "The project was designed to clearly present services, build trust, and enable customers to easily get in touch through a structured contact workflow."
+    ],
+    "techStack": [
+      "Laravel",
+      "PHP",
+      "HTML",
+      "SCSS",
+      "JavaScript"
+    ],
+    "video": {
+      "title": "Website Overview",
+      "description": "Overview of service sections, layout, and contact form functionality.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    "contributions": [
+      {
+        "title": "Full Stack Development",
+        "description": "Built the website using Laravel, handling both frontend and backend functionality."
+      },
+      {
+        "title": "Contact Form Workflow",
+        "description": "Implemented contact form functionality with backend processing and validation."
+      },
+      {
+        "title": "Responsive Design",
+        "description": "Developed a clean, responsive layout to ensure usability across devices."
+      },
+      {
+        "title": "Client Delivery",
+        "description": "Delivered the project end-to-end for an Australian client, ensuring alignment with business needs."
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Client",
+        "value": "Australia"
+      },
+      {
+        "label": "Stack",
+        "value": "Laravel"
+      },
+      {
+        "label": "Type",
+        "value": "Business Website"
+      }
     ]
   }
 ]
