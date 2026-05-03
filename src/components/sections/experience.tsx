@@ -54,42 +54,72 @@ const ExperienceSection = () => {
                 </h2>
 
                 <div className="bullet-section-wrapper padding-top">
-                    {experiences.map((exp, index) => (
-                        <div
-                            key={index}
-                            className="item"
-                            onMouseEnter={() => setActiveIndex(index)}
-                            onMouseLeave={() => setActiveIndex(null)}
-                        >
-                            <div className="bullet-line-wrapper">
-                                <div className="bullet-line-vis"></div>
 
-                                <div
-                                    className={`bullet-blank ${activeIndex === index ? "bullet" : ""
-                                        }`}
-                                ></div>
-
-                                <div className="bullet-line"></div>
-                            </div>
-
-                            <div className="card exp-card">
-                                <div className="card-heading">
-                                    <div className="title-wrapper">
-                                        <h3>{exp.title}</h3>
-                                        <h5>{exp.role}</h5>
-                                    </div>
-                                    <div className="duration-block">{exp.duration}</div>
-
-                                </div>
-                                {"company" in exp && exp.company ? <p>{exp.company}</p> : null}
-                                <ul>
-                                    {exp.responsibilities.map((item) => (
-                                        <li key={item}>{item}</li>
-                                    ))}
-                                </ul>
-                            </div>
+                    <div className="item">
+                        <div className="bullet-line-wrapper">
+                            <div className="bullet-line-invis"></div>
+                            <div className="bullet-blank bullet"></div>
+                            <div className="bullet-line"></div>
                         </div>
-                    ))}
+
+                        <div className="card exp-card">
+                            <div className="card-heading">
+                                <div className="title-wrapper">
+                                    <h3>Splashbox Australia</h3>
+                                    <h5>Web Developer</h5>
+                                </div>
+                                <div className="duration-block">Jul 2019 - Jun 2024</div>
+
+                            </div>
+                            <ul>
+                                <li >Delivered 7+ end-to-end web projects for Australian clients using Laravel, React, and Next.js, ensuring high performance, responsiveness, and scalability.</li>
+                                <li>Led development of a payroll system aligned with Sri Lankan government regulations, designing backend logic and API structures to handle complex business rules and data processing.</li>
+                                <li>Progressed from Frontend Developer (Angular) to Full Stack Developer, and was promoted to Team Lead within 1.5 years based on performance.</li>
+                                <li>Managed a cross-functional team of 10 developers and QA engineers, ensuring code quality, scalability, and timely delivery.</li>
+                                <li>Designed and implemented secure, scalable backend architectures using Laravel, including API development, data handling, and system integration.</li>
+                                <li>Acted as Scrum Master, managing sprints, tracking progress via Jira, and aligning development with business objectives.</li>
+                                <li>Collaborated with senior stakeholders to define system requirements and translate them into technical solutions.</li>
+                                <li>Led the full development lifecycle from requirement analysis and system design to implementation and deployment.</li>
+                                <li>Conducted client product demonstrations and supported onboarding for subscription-based SaaS platforms.</li>
+                                <li>Built scalable solutions using Angular, PHP (Laravel), and MySQL, with integrations involving Firebase and AWS.</li>
+                                <li>Improved team efficiency through structured workflows, clear communication, and process optimisation.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="item">
+                        <div className="bullet-line-wrapper">
+                            <div className="bullet-line-vis"></div>
+                            <div className="bullet-blank"></div>
+                            <div className="bullet-line"></div>
+                        </div>
+
+                        <div className="card exp-card">
+                            <div className="card-heading">
+                                <div className="title-wrapper">
+                                    <h3>Splashbox Australia</h3>
+                                    <h5>Web Developer</h5>
+                                </div>
+                                <div className="duration-block">Jul 2019 - Jun 2024</div>
+
+                            </div>
+                            <ul>
+                                <li >Developed SaaS-based enterprise applications, including a POS system with integrated accounting and sales management features, with backend services and RESTful APIs built using Laravel (PHP).</li>
+                                <li>Led development of a payroll system aligned with Sri Lankan government regulations, designing backend logic and API structures to handle complex business rules and data processing.</li>
+                                <li>Progressed from Frontend Developer (Angular) to Full Stack Developer, and was promoted to Team Lead within 1.5 years based on performance.</li>
+                                <li>Managed a cross-functional team of 10 developers and QA engineers, ensuring code quality, scalability, and timely delivery.</li>
+                                <li>Designed and implemented secure, scalable backend architectures using Laravel, including API development, data handling, and system integration.</li>
+                                <li>Acted as Scrum Master, managing sprints, tracking progress via Jira, and aligning development with business objectives.</li>
+                                <li>Collaborated with senior stakeholders to define system requirements and translate them into technical solutions.</li>
+                                <li>Led the full development lifecycle from requirement analysis and system design to implementation and deployment.</li>
+                                <li>Conducted client product demonstrations and supported onboarding for subscription-based SaaS platforms.</li>
+                                <li>Built scalable solutions using Angular, PHP (Laravel), and MySQL, with integrations involving Firebase and AWS.",</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

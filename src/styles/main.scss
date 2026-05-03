@@ -392,6 +392,12 @@ h2+p {
   }
 }
 
+#experience {
+  .bullet-blank {
+    height: 1.1rem;
+  }
+}
+
 .bullet-section-wrapper {
   display: flex;
   flex-direction: column;
@@ -424,7 +430,7 @@ h2+p {
 
       .bullet-blank {
         width: 1rem;
-        height: 1.35rem;
+        height: 1.25rem;
         border-radius: 100%;
         border: 2px solid var(--primary);
         transition: all 1s ease;
