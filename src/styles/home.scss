@@ -28,6 +28,20 @@
   position: relative;
 }
 
+.hero-img-wrapper {
+  max-height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
 .cursor {
   display: inline-block;
   margin-left: 2px;

@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: space-between;
   transform: translateX(100%);
+  z-index: 1000;
   opacity: 0;
   transition: transform 0.8s ease, opacity 0.8s ease;
 

@@ -16,8 +16,8 @@ type GatewayOption = {
   details: string[];
 };
 
-const PROFESSIONAL_IMAGE = "/hero-dummy.png";
-const FREELANCER_IMAGE = "/hero-dummy.png";
+const PROFESSIONAL_IMAGE = "/professional-hero.png";
+const FREELANCER_IMAGE = "/freelancer-hero.png";
 
 const gatewayOptions: GatewayOption[] = [
   {
