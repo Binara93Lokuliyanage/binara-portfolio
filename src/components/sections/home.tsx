@@ -38,7 +38,13 @@ const HomeSection = () => {
 
   return (
     <section id="home" className="col-2 section-padding-top section-padding-bottom">
-      <h1>Hi, I’m Binara</h1>
+      <Reveal>
+        <div className="hero-img-wrapper">
+          <div className="hero-img-overlay"></div>
+          <img src="/professional-hero.png" alt="Background" />
+        </div>
+      </Reveal>
+      
 
       <Reveal>
 

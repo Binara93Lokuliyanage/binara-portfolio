@@ -152,7 +152,7 @@
   --accent-strong: #7a5200;
   --text: #241900;
   --muted: rgba(55, 40, 8, 0.76);
-  --image-opacity: 0.58;
+  --image-opacity: 0.8;
   --image-edge: clamp(-5rem, -6vw, -2rem);
   background:
     radial-gradient(circle at 18% 18%, rgba(255, 180, 0, 0.2), transparent 36%),
@@ -179,7 +179,7 @@
   }
 
   &:is(:hover, :focus-visible, :focus-within) {
-    --image-opacity: 0.74;
+    --image-opacity: 0.9;
   }
 
   .gateway-orbit {
