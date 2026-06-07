@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import ProjectCard from "@/components/project-card";
-import { allProjects } from "@/lib/projects";
+import { getProjects } from "@/lib/projects";
 
-const ProjectsSection = () => {
-    const featuredProjects = allProjects.slice(0, 4);
+const ProjectsSection = async () => {
+    const projects = await getProjects();
+    const featuredProjects = projects.slice(0, 4);
 
     return (
         <section id="projects" className="section-padding-top section-padding-bottom">

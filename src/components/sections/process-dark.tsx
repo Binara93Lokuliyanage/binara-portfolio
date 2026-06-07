@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ProcessDarkSection = () => {
     return (
-        <section id="projects" className="section-padding-top section-padding-bottom freelancer-dark bg-dark process-section">
+        <section id="process" className="section-padding-top section-padding-bottom freelancer-dark bg-dark process-section">
             <div className="container col-2 ">
                 <div>
                     <h2 className="h1">

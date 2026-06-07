@@ -11,15 +11,16 @@ const SidebarDark = () => {
   const [activeSection, setActiveSection] = useState("home");
   const lottieRef = useRef<LottieRefCurrentProps>(null);
   const [isMounted, setIsMounted] = useState(false);
+  const basePath = "/freelancer";
 
 
   const navItems = [
-    { href: "#home", id: "home", icon: "home-dark", alt: "Home" },
-    { href: "#skills", id: "skills", icon: "skills-dark", alt: "Skills" },
-    { href: "#projects", id: "projects", icon: "projects-dark", alt: "Projects" },
-    { href: "#education", id: "education", icon: "education-dark", alt: "Education" },
-    { href: "#testimonials", id: "testimonials", icon: "testi-dark", alt: "Testimonials" },
-    { href: "#contact", id: "contact", icon: "contact-dark", alt: "Contact" },
+    { href: `${basePath}#home`, id: "home", icon: "home-dark", alt: "Home" },
+    { href: `${basePath}#skills`, id: "skills", icon: "skills-dark", alt: "Skills" },
+    { href: `${basePath}#projects`, id: "projects", icon: "projects-dark", alt: "Projects" },
+    { href: `${basePath}#process`, id: "process", icon: "process-dark", alt: "Process" },
+    { href: `${basePath}#testimonials`, id: "testimonials", icon: "testi-dark", alt: "Testimonials" },
+    { href: `${basePath}#contact`, id: "contact", icon: "contact-dark", alt: "Contact" },
   ];
 
   /* 🔥 NEW: Observe sections */
@@ -30,13 +31,33 @@ const SidebarDark = () => {
 
     const observer = new IntersectionObserver(
       entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
+        const visibleEntries = entries.filter(entry => entry.isIntersecting);
+        const viewportCenter = window.innerHeight / 2;
+        const closestEntry = visibleEntries.reduce<IntersectionObserverEntry | null>(
+          (closest, entry) => {
+            const entryCenter =
+              entry.boundingClientRect.top + entry.boundingClientRect.height / 2;
+            const entryDistance = Math.abs(entryCenter - viewportCenter);
+
+            if (!closest) return entry;
+
+            const closestCenter =
+              closest.boundingClientRect.top + closest.boundingClientRect.height / 2;
+            const closestDistance = Math.abs(closestCenter - viewportCenter);
+
+            return entryDistance < closestDistance ? entry : closest;
+          },
+          null
+        );
+
+        if (closestEntry) {
+          setActiveSection(closestEntry.target.id);
+        }
       },
-      { threshold: 0.6 }
+      {
+        rootMargin: "-45% 0px -45% 0px",
+        threshold: 0,
+      }
     );
 
     sections.forEach(section => {
@@ -98,7 +119,7 @@ const SidebarDark = () => {
 
             return (
               <li key={item.id} className={isActive ? "active" : ""}>
-                <Link href={item.href}>
+                <Link href={item.href} onClick={() => setActiveSection(item.id)}>
 
                   <div>
                     <Image

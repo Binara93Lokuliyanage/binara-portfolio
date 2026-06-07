@@ -16,7 +16,7 @@ const ProjectCard = ({
   return (
     <article className="card project-card">
       <div className="image-wrapper">
-        {showVideo ? (
+        {showVideo && project.cardVideo ? (
           <video
             src={project.cardVideo}
             poster={project.heroImage}

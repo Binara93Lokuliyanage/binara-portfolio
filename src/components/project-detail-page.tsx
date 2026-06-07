@@ -17,6 +17,7 @@ const ProjectDetailPage = ({
   const darkSectionClass = isFreelancer
     ? "project-detail-dark freelancer-dark bg-dark"
     : "";
+  const hasDemoVideo = Boolean(project.video?.embedUrl);
 
   return (
     <main>
@@ -37,9 +38,11 @@ const ProjectDetailPage = ({
             <a className="btn-primary" href="#about-project">
               Explore Project
             </a>
-            <a className="project-secondary-link" href="#project-video">
-              Watch Demo
-            </a>
+            {hasDemoVideo ? (
+              <a className="project-secondary-link" href="#project-video">
+                Watch Demo
+              </a>
+            ) : null}
           </div>
         </div>
       </section>
@@ -89,22 +92,24 @@ const ProjectDetailPage = ({
         </div>
       </section>
 
-      <section
-        id="project-video"
-        className={`section-padding-bottom project-video-section ${darkSectionClass}`}
-      >
-        <div className="container">
-          <div className="project-video-frame">
-            <iframe
-              src={project.video.embedUrl}
-              title={`${project.title} demo video`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
+      {hasDemoVideo ? (
+        <section
+          id="project-video"
+          className={`section-padding-bottom project-video-section ${darkSectionClass}`}
+        >
+          <div className="container">
+            <div className="project-video-frame">
+              <iframe
+                src={project.video?.embedUrl}
+                title={`${project.title} demo video`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       <section className={`section-padding-bottom ${darkSectionClass}`}>
         <div className="container project-section-grid">

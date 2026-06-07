@@ -11,15 +11,16 @@ const Sidebar = () => {
   const [activeSection, setActiveSection] = useState("home");
   const lottieRef = useRef<LottieRefCurrentProps>(null);
   const [isMounted, setIsMounted] = useState(false);
+  const basePath = "/professional";
 
 
   const navItems = [
-    { href: "#home", id: "home", icon: "home", alt: "Home" },
-    { href: "#skills", id: "skills", icon: "skills", alt: "Skills" },
-    { href: "#projects", id: "projects", icon: "projects", alt: "Projects" },
-    { href: "#education", id: "education", icon: "education", alt: "Education" },
-    { href: "#experience", id: "experience", icon: "experience", alt: "Experience" },
-    { href: "#contact", id: "contact", icon: "contact", alt: "Contact" },
+    { href: `${basePath}#home`, id: "home", icon: "home", alt: "Home" },
+    { href: `${basePath}#skills`, id: "skills", icon: "skills", alt: "Skills" },
+    { href: `${basePath}#projects`, id: "projects", icon: "projects", alt: "Projects" },
+    { href: `${basePath}#education`, id: "education", icon: "education", alt: "Education" },
+    { href: `${basePath}#experience`, id: "experience", icon: "experience", alt: "Experience" },
+    { href: `${basePath}#contact`, id: "contact", icon: "contact", alt: "Contact" },
   ];
 
   useEffect(() => {
@@ -29,13 +30,33 @@ const Sidebar = () => {
 
     const observer = new IntersectionObserver(
       entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
+        const visibleEntries = entries.filter(entry => entry.isIntersecting);
+        const viewportCenter = window.innerHeight / 2;
+        const closestEntry = visibleEntries.reduce<IntersectionObserverEntry | null>(
+          (closest, entry) => {
+            const entryCenter =
+              entry.boundingClientRect.top + entry.boundingClientRect.height / 2;
+            const entryDistance = Math.abs(entryCenter - viewportCenter);
+
+            if (!closest) return entry;
+
+            const closestCenter =
+              closest.boundingClientRect.top + closest.boundingClientRect.height / 2;
+            const closestDistance = Math.abs(closestCenter - viewportCenter);
+
+            return entryDistance < closestDistance ? entry : closest;
+          },
+          null
+        );
+
+        if (closestEntry) {
+          setActiveSection(closestEntry.target.id);
+        }
       },
-      { threshold: 0.6 }
+      {
+        rootMargin: "-45% 0px -45% 0px",
+        threshold: 0,
+      }
     );
 
     sections.forEach(section => {
@@ -97,7 +118,7 @@ const Sidebar = () => {
 
             return (
               <li key={item.id} className={isActive ? "active" : ""}>
-                <Link href={item.href}>
+                <Link href={item.href} onClick={() => setActiveSection(item.id)}>
 
                   <div>
                     <Image

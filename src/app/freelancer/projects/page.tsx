@@ -1,14 +1,16 @@
 import Footer from "@/components/footer";
 import ProjectFilter from "@/components/project-filter";
 import FormDarkSection from "@/components/sections/form-dark";
-import { allProjects } from "@/lib/projects";
+import { getProjects, type Project } from "@/lib/projects";
 
-const getTechStacks = () => {
-  const techStacks = allProjects.flatMap((project) => project.techStack);
+const getTechStacks = (projects: Project[]) => {
+  const techStacks = projects.flatMap((project) => project.techStack);
   return Array.from(new Set(techStacks)).sort((a, b) => a.localeCompare(b));
 };
 
-export default function FreelancerProjectsPage() {
+export default async function FreelancerProjectsPage() {
+  const projects = await getProjects();
+
   return (
     <main>
       <section className="section-padding-top section-padding-bottom all-projects-section freelancer-dark bg-dark">
@@ -20,8 +22,8 @@ export default function FreelancerProjectsPage() {
             Browse the full project archive and filter by the technologies used across each build.
           </p>
           <ProjectFilter
-            projects={allProjects}
-            techStacks={getTechStacks()}
+            projects={projects}
+            techStacks={getTechStacks(projects)}
             projectHrefBase="/freelancer/projects"
           />
         </div>
