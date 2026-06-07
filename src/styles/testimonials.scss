@@ -114,3 +114,14 @@
 
   100% { transform: translateY(0); }
 }
+
+@media screen and (max-width: 660px) {
+  .testimonial-slider {
+    height: 420px;
+
+    .card {
+      min-height: 240px;
+      padding: 1.15rem;
+    }
+  }
+}

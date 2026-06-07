@@ -1,7 +1,7 @@
 .projects-wrapper {
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
 
     .card {
@@ -166,5 +166,36 @@
 @media screen and (max-width: 991px) {
     .projects-wrapper {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .projects-wrapper {
+        gap: 1.25rem;
+
+        .card {
+            .image-wrapper {
+                height: clamp(170px, 52vw, 240px);
+            }
+
+            .details-wrapper {
+                padding: 18px;
+            }
+        }
+    }
+
+    .project-filter {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 0.25rem;
+
+        button {
+            flex: 0 0 auto;
+        }
+    }
+
+    .tech-items-wrapper {
+        gap: 0.65rem;
     }
 }
