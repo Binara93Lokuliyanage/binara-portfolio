@@ -74,6 +74,23 @@
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 660px) {
+  .logo-track-logos-slider::before,
+  .logo-track-logos-slider::after {
+    width: 64px;
+  }
+
+  .logos-row {
+    gap: 1.5rem;
+    padding-right: 2rem;
+  }
+
+  .logo-track-logo-wrapper {
+    height: 46px;
+    padding: 8px;
+  }
+}
+
 /* infinite animation */
 @keyframes scrollClients {
   from {

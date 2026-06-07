@@ -1,6 +1,6 @@
 .skills-list-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     width: 100%;
     gap: 1.5rem;
     margin-top: 3rem;
@@ -116,5 +116,37 @@
 
     100% {
         transform: rotateY(0deg) scale(1);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .skills-list-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .skills-list-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .card {
+            padding: 1.1rem;
+
+            .title-section {
+                align-items: center;
+
+                h4 {
+                    line-height: 1.35;
+                }
+
+                .icon-wrapper {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    flex-shrink: 0;
+                }
+            }
+        }
     }
 }

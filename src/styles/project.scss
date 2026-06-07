@@ -215,6 +215,7 @@
 
 @media screen and (max-width: 991px) {
     .project-hero-section {
+        width: 100%;
         min-height: 62vh;
     }
 
@@ -227,11 +228,33 @@
 
 @media screen and (max-width: 660px) {
     .project-hero-section {
+        width: 100%;
         min-height: 70vh;
     }
 
     .project-hero-content {
         padding-top: 6rem;
         padding-bottom: 3rem;
+    }
+
+    .project-hero-actions {
+        width: 100%;
+
+        a {
+            width: 100%;
+        }
+    }
+
+    .project-secondary-link {
+        min-width: 0;
+    }
+
+    .project-highlight-card,
+    .project-contribution-card {
+        padding: 1.15rem;
+    }
+
+    .project-video-frame {
+        border-radius: 12px;
     }
 }
