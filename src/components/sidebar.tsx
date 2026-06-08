@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { BrainCircuit } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import logoTransition from "@/assets/lottie/logo-transition.json";
@@ -103,9 +104,9 @@ const Sidebar = () => {
         </div>
 
         {/* Default logo */}
-        <div className="logo">
+        <a href="/professional" className="logo">
           <img src="/logo-professional.jpg" alt="Logo" />
-        </div>
+        </a>
       </div>
 
       <nav>
@@ -136,9 +137,9 @@ const Sidebar = () => {
         </ul>
       </nav>
 
-      <div className="nav-extra-btn">
-        <img src="/icons/download.svg" />
-      </div>
+      <Link href="/professional/binu-ai" className="nav-extra-btn" aria-label="Open Binu AI">
+        <BrainCircuit size={22} strokeWidth={2.2} aria-hidden="true" />
+      </Link>
     </aside>
   );
 };

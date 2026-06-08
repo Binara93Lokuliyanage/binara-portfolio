@@ -104,9 +104,9 @@ const SidebarDark = () => {
         </div>
 
         {/* Default logo */}
-        <div className="logo">
+        <a href="/freelancer" className="logo">
           <img src="/logo-freelancer.jpg" alt="Logo" />
-        </div>
+        </a>
       </div>
 
       <nav>
@@ -138,7 +138,7 @@ const SidebarDark = () => {
       </nav>
 
       <div className="nav-extra-btn">
-        <img src="/icons/download-dark.svg" />
+        {/* <img src="/icons/download-dark.svg" /> */}
       </div>
     </aside>
   );
