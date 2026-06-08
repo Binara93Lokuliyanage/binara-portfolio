@@ -79,11 +79,11 @@ const TestimonialsDarkSection = () => {
                             </p>
                             <div className="client-details-wrapper">
                                 <div className="client-image-wrapper">
-                                    <img src="/logo.jpg" alt="Logo" />
+                                    <img src="/amali-icon.jpg" alt="Logo" />
                                 </div>
                                 <div className="client-details">
-                                    <h4>John Doe</h4>
-                                    <p>Managing Director</p>
+                                    <h4>Amali</h4>
+                                    <p>Owner | Hair Focus Salon</p>
                                 </div>
                             </div>
                         </div>
