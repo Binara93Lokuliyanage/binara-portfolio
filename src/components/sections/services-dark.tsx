@@ -10,7 +10,7 @@ const ServicesDarkSection = () => {
                     My <span className="highlight">Services</span>
                 </h2>
                 <p className="description-text">
-                    A versatile full-stack developer blending creative frontends, powerful backends, and seamless DevOps workflows to build scalable digital experiences.
+                    Clear, reliable website services for businesses that want a professional online presence without needing to understand the technical details.
                 </p>
                 </Reveal>
 
@@ -21,21 +21,21 @@ const ServicesDarkSection = () => {
                             <div className="icon-wrapper">
                                 <Image
                                     src="/icons/skills-fe.png"
-                                    alt="Front end"
+                                    alt="Website creation"
                                     width={24}
                                     height={24}
                                     className="btn-arrow"
                                 />
                             </div>
                             <h4>
-                                Frontend Development
+                                Website Creation
                             </h4>
                         </div>
-                        <p>HTML, CSS/SCSS, Angular, React, JavaScript</p>
+                        <p>Modern, mobile-friendly websites built around your brand, services, and customer journey.</p>
                         <div className="skill-percentage-area">
                             <div className="skill-info-wrapper">
-                                <p>Proficiency</p>
-                                <p className="percentage">95%</p>
+                                <p>Best for</p>
+                                <p className="percentage">Launch</p>
                             </div>
                             <div className="skill-bar">
                                 <div className="skill-progress" style={{ width: "95%" }}></div>
@@ -48,21 +48,21 @@ const ServicesDarkSection = () => {
                             <div className="icon-wrapper">
                                 <Image
                                     src="/icons/skills-backend.png"
-                                    alt="Back end"
+                                    alt="Online store"
                                     width={24}
                                     height={24}
                                     className="btn-arrow"
                                 />
                             </div>
                             <h4>
-                                Backend Development
+                                Online Store Setup
                             </h4>
                         </div>
-                        <p>Node.js, Express, Laravel, REST APIs<br /></p>
+                        <p>Simple, polished shop experiences that help customers browse, enquire, book, or buy with confidence.</p>
                         <div className="skill-percentage-area">
                             <div className="skill-info-wrapper">
-                                <p>Proficiency</p>
-                                <p className="percentage">90%</p>
+                                <p>Best for</p>
+                                <p className="percentage">Sales</p>
                             </div>
                             <div className="skill-bar">
                                 <div className="skill-progress" style={{ width: "90%" }}></div>
@@ -75,21 +75,21 @@ const ServicesDarkSection = () => {
                             <div className="icon-wrapper">
                                 <Image
                                     src="/icons/skills-db.png"
-                                    alt="Arrow"
+                                    alt="Website redesign"
                                     width={24}
                                     height={24}
                                     className="btn-arrow"
                                 />
                             </div>
                             <h4>
-                                Database & Cloud
+                                Website Redesign
                             </h4>
                         </div>
-                        <p>MongoDB, MySQL, Firestore, Firebase, GCP</p>
+                        <p>Refresh an outdated site with cleaner pages, better structure, faster loading, and a more trustworthy look.</p>
                         <div className="skill-percentage-area">
                             <div className="skill-info-wrapper">
-                                <p>Proficiency</p>
-                                <p className="percentage">85%</p>
+                                <p>Best for</p>
+                                <p className="percentage">Refresh</p>
                             </div>
                             <div className="skill-bar">
                                 <div className="skill-progress" style={{ width: "85%" }}></div>
@@ -102,21 +102,21 @@ const ServicesDarkSection = () => {
                             <div className="icon-wrapper">
                                 <Image
                                     src="/icons/skills-upload.png"
-                                    alt="Arrow"
+                                    alt="Forms and bookings"
                                     width={24}
                                     height={24}
                                     className="btn-arrow"
                                 />
                             </div>
                             <h4>
-                                DevOps & Deployment
+                                Forms & Bookings
                             </h4>
                         </div>
-                        <p>Docker, Kubernetes, CI/CD, GCP<br /></p>
+                        <p>Contact forms, quote requests, booking flows, and customer enquiries set up so leads reach you clearly.</p>
                         <div className="skill-percentage-area">
                             <div className="skill-info-wrapper">
-                                <p>Proficiency</p>
-                                <p className="percentage">75%</p>
+                                <p>Best for</p>
+                                <p className="percentage">Leads</p>
                             </div>
                             <div className="skill-bar">
                                 <div className="skill-progress" style={{ width: "75%" }}></div>
@@ -129,21 +129,21 @@ const ServicesDarkSection = () => {
                             <div className="icon-wrapper">
                                 <Image
                                     src="/icons/skills-design.png"
-                                    alt="Arrow"
+                                    alt="Website care"
                                     width={24}
                                     height={24}
                                     className="btn-arrow"
                                 />
                             </div>
                             <h4>
-                                Design & UX
+                                Website Care
                             </h4>
                         </div>
-                        <p>Figma, Photoshop, wireframing, responsive<br /></p>
+                        <p>Ongoing updates, content changes, issue fixes, and improvements so your website stays current.</p>
                         <div className="skill-percentage-area">
                             <div className="skill-info-wrapper">
-                                <p>Proficiency</p>
-                                <p className="percentage">80%</p>
+                                <p>Best for</p>
+                                <p className="percentage">Support</p>
                             </div>
                             <div className="skill-bar">
                                 <div className="skill-progress" style={{ width: "80%" }}></div>
@@ -156,21 +156,21 @@ const ServicesDarkSection = () => {
                             <div className="icon-wrapper">
                                 <Image
                                     src="/icons/skills-eng.png"
-                                    alt="Arrow"
+                                    alt="Business automation"
                                     width={24}
                                     height={24}
                                     className="btn-arrow"
                                 />
                             </div>
                             <h4>
-                                Engineering & Professional
+                                Business Automation
                             </h4>
                         </div>
-                        <p>Agile, Git, code review, collaboration, problem solving</p>
+                        <p>Small tools and process improvements that reduce manual work and keep your business information organised.</p>
                         <div className="skill-percentage-area">
                             <div className="skill-info-wrapper">
-                                <p>Proficiency</p>
-                                <p className="percentage">90%</p>
+                                <p>Best for</p>
+                                <p className="percentage">Workflow</p>
                             </div>
                             <div className="skill-bar">
                                 <div className="skill-progress" style={{ width: "90%" }}></div>

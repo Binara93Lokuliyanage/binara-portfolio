@@ -15,7 +15,7 @@ const ProjectsDarkSection = async () => {
                     My <span className="highlight">Projects</span>
                 </h2>
                 <p className="description-text">
-                    A versatile full-stack developer blending creative frontends, powerful backends, and seamless DevOps workflows to build scalable digital experiences.
+                    A selection of my recent work, showcasing a range of projects that demonstrate my skills and experience in web development and digital solutions.
                 </p>
                 </Reveal>
                 <Reveal>

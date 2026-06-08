@@ -26,7 +26,7 @@ const gatewayOptions: GatewayOption[] = [
     imageSrc: PROFESSIONAL_IMAGE,
     imageAlt: "Professional portfolio placeholder portrait",
     eyebrow: "Career track",
-    title: "Professional Portfolio",
+    title: "Looking to Hire Me?",
     subtitle: "Full Stack Software Engineer",
     description:
       "Explore my software engineering experience, technical skills, real-world projects, leadership background, and career profile.",
@@ -39,7 +39,7 @@ const gatewayOptions: GatewayOption[] = [
     imageSrc: FREELANCER_IMAGE,
     imageAlt: "Freelancer portfolio placeholder portrait",
     eyebrow: "Client track",
-    title: "Freelancer Portfolio",
+    title: "Need My Services?",
     subtitle: "Freelance Web & Digital Solutions",
     description:
       "Explore creative websites, WordPress, Shopify, Webflow, branding, and digital solutions built for real businesses.",
