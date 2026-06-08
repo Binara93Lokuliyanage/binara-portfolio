@@ -1,15 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import ProjectCard from "@/components/project-card";
-import { getProjects } from "@/lib/projects";
+import { getFeaturedProjects } from "@/lib/projects";
+import Reveal from "../reveal";
 
 const ProjectsSection = async () => {
-    const projects = await getProjects();
-    const featuredProjects = projects.slice(0, 4);
+    const featuredProjects = await getFeaturedProjects();
 
     return (
         <section id="projects" className="section-padding-top section-padding-bottom">
-            <div className="container text-center">
+            <Reveal>
+                <div className="container text-center">
                 <h2>
                     My <span className="highlight">Projects</span>
                 </h2>
@@ -37,6 +38,7 @@ const ProjectsSection = async () => {
                     />
                 </Link>
             </div>
+            </Reveal>
         </section>
     );
 };

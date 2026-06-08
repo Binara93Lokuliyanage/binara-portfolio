@@ -1,16 +1,21 @@
 import Image from "next/image";
+import Reveal from "../reveal";
 
 const ServicesDarkSection = () => {
     return (
         <section id="skills" className="section-padding-top section-padding-bottom bg-light-dark freelancer-dark">
             <div className="container text-center">
-                <h2>
+                <Reveal>
+                    <h2>
                     My <span className="highlight">Services</span>
                 </h2>
                 <p className="description-text">
                     A versatile full-stack developer blending creative frontends, powerful backends, and seamless DevOps workflows to build scalable digital experiences.
                 </p>
-                <div className="skills-list-section">
+                </Reveal>
+
+                <Reveal>
+                    <div className="skills-list-section">
                     <div className="card">
                         <div className="title-section">
                             <div className="icon-wrapper">
@@ -173,6 +178,7 @@ const ServicesDarkSection = () => {
                         </div>
                     </div>
                 </div>
+                </Reveal>
             </div>
         </section>
     );

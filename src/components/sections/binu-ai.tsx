@@ -25,11 +25,11 @@ const BinuAiSection = () => {
               </span>
               <h2>Meet Binu AI</h2>
               <p className="binu-ai-subtitle">
-                Binara&apos;s personal AI recruiter assistant
+                My personal AI recruiter assistant
               </p>
               <p className="binu-ai-description">
                 Paste a job description and Binu will compare it with
-                Binara&apos;s real experience, technical skills, projects, and
+                My real experience, technical skills, projects, and
                 leadership background, helping recruiters quickly understand
                 role fit.
               </p>
@@ -48,7 +48,7 @@ const BinuAiSection = () => {
                   Try Binu AI
                 </Link>
                 <p>
-                  Powered by Binara&apos;s verified profile data. Binu does not
+                  Powered by My verified profile data. Binu does not
                   invent experience.
                 </p>
               </div>

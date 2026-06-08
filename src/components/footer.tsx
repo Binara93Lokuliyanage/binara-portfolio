@@ -32,13 +32,13 @@ const Footer = () => {
                             </div>
                             <div className="details">
                                 <h6>Contact</h6>
-                                <a href="mailto:mr.binara@gmail.com">+61 433 44 1325</a>
+                                <a href="callto:+61433441325">+61 433 44 1325</a>
                             </div>
                         </div>
 
                     </div>
                     <div className="social-links-wrapper">
-                        <a href="#" className="social-link">
+                        <a href = "https://www.facebook.com/profile.php?id=100083008376135" target="_blank" rel="noopener noreferrer" className="social-link">
                             <Image
                                 src="/icons/fb-icon.svg"
                                 alt="Arrow"
@@ -47,7 +47,7 @@ const Footer = () => {
                                 className="btn-arrow"
                             />
                         </a>
-                        <a href="#" className="social-link">
+                        {/* <a href="#" className="social-link">
                             <Image
                                 src="/icons/insta-icon.svg"
                                 alt="Arrow"
@@ -55,8 +55,8 @@ const Footer = () => {
                                 height={12}
                                 className="btn-arrow"
                             />
-                        </a>
-                        <a href="#" className="social-link">
+                        </a> */}
+                        <a href="https://www.linkedin.com/in/binara-lokuliyanage-3963681a5/" target="_blank" rel="noopener noreferrer" className="social-link">
                             <Image
                                 src="/icons/linkedin-icon.svg"
                                 alt="Arrow"
@@ -65,7 +65,7 @@ const Footer = () => {
                                 className="btn-arrow"
                             />
                         </a>
-                        <a href="#" className="social-link">
+                        <a href = "https://www.youtube.com/@millionmilesdream" target="_blank" className="social-link">
                             <Image
                                 src="/icons/yt-icon.svg"
                                 alt="Arrow"
@@ -83,7 +83,6 @@ const Footer = () => {
                         <a href="#projects">Projects</a>
                         <a href="#education">Education</a>
                         <a href="#experience">Experience</a>
-                        <a href="#testimonials">Testimonials</a>
                         <a href="#contacts">Contacts</a>
                     </div>
                     <p>

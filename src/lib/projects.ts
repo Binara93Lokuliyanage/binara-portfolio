@@ -25,6 +25,9 @@ export type Project = {
 
 const PROJECTS_API_URL =
   process.env.PROJECTS_API_URL ?? "http://13.236.4.82:5000/api/projects";
+const FEATURED_PROJECTS_API_URL =
+  process.env.FEATURED_PROJECTS_API_URL ??
+  "http://13.236.4.82:5000/api/projects/featured";
 
 const normalizeProjects = (projects: Project[]) =>
   projects.map((project) => ({
@@ -57,18 +60,29 @@ const getProjectsFromPayload = (payload: unknown): Project[] => {
   return [];
 };
 
-export const getProjects = cache(async (): Promise<Project[]> => {
-  const response = await fetch(PROJECTS_API_URL, {
+const fetchProjects = async (
+  url: string,
+  errorMessage: string
+): Promise<Project[]> => {
+  const response = await fetch(url, {
     cache: process.env.NODE_ENV === "production" ? "force-cache" : "no-store",
   });
 
   if (!response.ok) {
-    throw new Error(`Failed to fetch projects: ${response.status}`);
+    throw new Error(`${errorMessage}: ${response.status}`);
   }
 
   const payload: unknown = await response.json();
   return getProjectsFromPayload(payload);
-});
+};
+
+export const getProjects = cache(async (): Promise<Project[]> =>
+  fetchProjects(PROJECTS_API_URL, "Failed to fetch projects")
+);
+
+export const getFeaturedProjects = cache(async (): Promise<Project[]> =>
+  fetchProjects(FEATURED_PROJECTS_API_URL, "Failed to fetch featured projects")
+);
 
 export const getProjectBySlug = async (slug: string) => {
   const projects = await getProjects();
