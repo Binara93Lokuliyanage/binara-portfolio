@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Reveal from "../reveal";
 
 const words = ["Passionate", "Creative", "Driven"];
 
@@ -37,74 +38,80 @@ const HomeDarkSection = () => {
 
   return (
     <section id="home" className="col-2 section-padding-top section-padding-bottom freelancer-dark bg-dark">
-      <h1>Hi, I’m Binara</h1>
-
-      <div className="home-section-wrapper">
-        <h1>
-          I’m <br />
-          Binara Lokuliyanage <br />
-          a{" "}
-          <span className="highlight typing">
-            {text}
-            <span className="cursor">|</span>
-          </span>{" "}<br />
-          Software Engineer
-        </h1>
-
-        <p>
-          I’m Binara Lokuliyanage, a passionate Software Engineer with over 5 years
-          of professional experience in full-stack web development.
-        </p>
-
-        <a className="btn-primary">
-          Hire me
-          <Image
-            src="/icons/btn-arrow.svg"
-            alt="Arrow"
-            width={16}
-            height={16}
-            className="btn-arrow"
-          />
-        </a>
-        <div className = "social-links-wrapper">
-          <a href = "#" className="social-link">
-            <Image
-            src="/icons/fb-icon.svg"
-            alt="Arrow"
-            width={14}
-            height={14}
-            className="btn-arrow"
-          />
-          </a>
-          <a href = "#" className="social-link">
-            <Image
-            src="/icons/insta-icon.svg"
-            alt="Arrow"
-            width={12}
-            height={12}
-            className="btn-arrow"
-          />
-          </a>
-          <a href = "#" className="social-link">
-            <Image
-            src="/icons/linkedin-icon.svg"
-            alt="Arrow"
-            width={12}
-            height={12}
-            className="btn-arrow"
-          />
-          </a>
-          <a href = "#" className="social-link">
-            <Image
-            src="/icons/yt-icon.svg"
-            alt="Arrow"
-            width={13}
-            height={13}
-            className="btn-arrow"
-          />
-          </a>
+      <Reveal>
+        <div className="hero-img-wrapper">
+          <div className="hero-img-overlay"></div>
+          <img src="/freelancer-hero.png" alt="Background" />
         </div>
-      </div>
+      </Reveal>
+      <Reveal>
+        <div className="home-section-wrapper">
+          <h1>
+            I’m <br />
+            Binara Lokuliyanage <br />
+            a{" "}
+            <span className="highlight typing">
+              {text}
+              <span className="cursor">|</span>
+            </span>{" "}<br />
+            Software Engineer
+          </h1>
+
+          <p>
+            I will help you build your dream project with my expertise in software development. With a passion for coding and a commitment to excellence, I am dedicated to delivering high-quality solutions that meet your needs and exceed your expectations.
+          </p>
+
+          <a href="#contact" className="btn-primary">
+            Contact Me
+            <Image
+              src="/icons/btn-arrow.svg"
+              alt="Arrow"
+              width={16}
+              height={16}
+              className="btn-arrow"
+            />
+          </a>
+          <div className="social-links-wrapper">
+            <a href = "https://www.facebook.com/profile.php?id=100083008376135" target="_blank" rel="noopener noreferrer" className="social-link">
+              <Image
+                src="/icons/fb-icon.svg"
+                alt="Arrow"
+                width={14}
+                height={14}
+                className="btn-arrow"
+              />
+            </a>
+            {/* <a href="#" className="social-link">
+              <Image
+                src="/icons/insta-icon.svg"
+                alt="Arrow"
+                width={12}
+                height={12}
+                className="btn-arrow"
+              />
+            </a> */}
+            <a href = "https://www.linkedin.com/in/binara-lokuliyanage-3963681a5/" target="_blank" className="social-link">
+              <Image
+                src="/icons/linkedin-icon.svg"
+                alt="Arrow"
+                width={12}
+                height={12}
+                className="btn-arrow"
+              />
+            </a>
+            <a href="https://www.youtube.com/@millionmilesdream" target="_blank" rel="noopener noreferrer" className="social-link">
+              <Image
+                src="/icons/yt-icon.svg"
+                alt="Arrow"
+                width={13}
+                height={13}
+                className="btn-arrow"
+              />
+            </a>
+          </div>
+        </div>
+      </Reveal>
+
     </section>
   );
 };

@@ -82,3 +82,29 @@
         }
     }
 }
+
+@media screen and (max-width: 760px) {
+    .footer {
+        .container {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            .links {
+                align-items: flex-start;
+                text-align: left;
+                gap: 1.5rem;
+
+                .navbar {
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                }
+            }
+
+            .main-methods-wrapper {
+                .method {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

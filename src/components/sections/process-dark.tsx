@@ -1,16 +1,18 @@
 import Image from "next/image";
+import Reveal from "../reveal";
 
 const ProcessDarkSection = () => {
     return (
-        <section id="projects" className="section-padding-top section-padding-bottom freelancer-dark bg-dark process-section">
-            <div className="container col-2 ">
+        <section id="process" className="section-padding-top section-padding-bottom freelancer-dark bg-dark process-section">
+            <Reveal>
+                <div className="container col-2 ">
                 <div>
                     <h2 className="h1">
                         Own a Website<br />
                         in just <span className="highlight"> 4 STEPS</span>
                     </h2>
                     <p>
-                        A versatile full-stack developer blending creative frontends, powerful backends, and seamless DevOps workflows to build scalable digital experiences.
+                        Owning a website is a powerful way to establish your online presence, showcase your work, and connect with your audience. With the right approach, you can have your own website up and running in just a few simple steps. Here's a straightforward guide to help you get started on your journey to owning a website.
                     </p>
                 </div>
                 <div className="bullet-section-wrapper process-list">
@@ -24,7 +26,7 @@ const ProcessDarkSection = () => {
                         </div>
                         <div className="card">
                             <h3>Step 1</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna. Pellentesque at ullamcorper arcu. Duis molestie dolor non cursus vulputate. </p>
+                            <p>Tell Me About Your Needs. We'll work together to understand your goals and create a website that meets your unique requirements.</p>
                         </div>
                     </div>
                     <div className="item">
@@ -37,7 +39,7 @@ const ProcessDarkSection = () => {
                         </div>
                         <div className="card">
                             <h3>Step 2</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna. Pellentesque at ullamcorper arcu. Duis molestie dolor non cursus vulputate. </p>
+                            <p>I will design a custom website layout and user interface that aligns with your brand and objectives.</p>
                         </div>
                     </div>
                     <div className="item">
@@ -50,8 +52,7 @@ const ProcessDarkSection = () => {
                         </div>
                         <div className="card">
                             <h3>Step 3</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna. Pellentesque at ullamcorper arcu. Duis molestie dolor non cursus vulputate. </p>
-
+                            <p>I will develop the website using the latest technologies and best practices to ensure it is fast, secure, and user-friendly.</p>
                         </div>
                     </div>
                     <div className="item">
@@ -64,12 +65,12 @@ const ProcessDarkSection = () => {
                         </div>
                         <div className="card">
                             <h3>Step 4</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna. Pellentesque at ullamcorper arcu. Duis molestie dolor non cursus vulputate. </p>
-
+                            <p>If you are satisfied with the website, You can pay for the final version and we can proceed with the launch and promotion. </p>
                         </div>
                     </div>
                 </div>
             </div>
+            </Reveal>
 
 
         </section>

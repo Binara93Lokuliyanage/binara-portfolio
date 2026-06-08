@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import Reveal from "../reveal";
 
 type FormData = {
     name: string;
@@ -60,7 +61,8 @@ const FormDarkSection = () => {
 
     return (
         <section id="contact" className="section-padding-top section-padding-bottom bg-dark">
-            <div className="container form-container">
+            <Reveal>
+                <div className="container form-container">
                 <div className="cta-container card">
                     <div className="img-wrapper">
                         <Image
@@ -119,6 +121,7 @@ const FormDarkSection = () => {
                     </div>
                 </div>
             </div>
+            </Reveal>
         </section>
     );
 };

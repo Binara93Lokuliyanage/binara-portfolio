@@ -3,6 +3,7 @@
   overflow: hidden;
   position: relative;
   touch-action: pan-y;
+  padding: 0 1rem;
 
    /* PAUSE animation when hovering */
   &:hover .testimonial-track {
@@ -113,4 +114,15 @@
   91%  { transform: translateY(-440px); }
 
   100% { transform: translateY(0); }
+}
+
+@media screen and (max-width: 660px) {
+  .testimonial-slider {
+    height: 420px;
+
+    .card {
+      min-height: 240px;
+      padding: 1.15rem;
+    }
+  }
 }

@@ -66,6 +66,7 @@
 
 
 import Footer from "@/components/footer";
+import BinuAiSection from "@/components/sections/binu-ai";
 import CtaSection from "@/components/sections/cta";
 import EducationSection from "@/components/sections/education";
 import ExperienceSection from "@/components/sections/experience";
@@ -80,6 +81,7 @@ export default function Page() {
       <HomeSection />
       <SkillSection />
       <ProjectsSection />
+      <BinuAiSection />
       <EducationSection />
       <TechStack />
       <ExperienceSection />
