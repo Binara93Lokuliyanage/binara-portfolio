@@ -1,6 +1,7 @@
 export const BINU_AI_API_URL =
   process.env.NEXT_PUBLIC_BINU_AI_API_URL ??
   `${process.env.NEXT_PUBLIC_API_BASE_URL ?? "https://binara-portfolio-backend-5pb9km3vm.vercel.app"}/api/ai/job-match`;
+  
 
 export const formatBinuResponse = (payload: unknown): string => {
   if (typeof payload === "string") {
