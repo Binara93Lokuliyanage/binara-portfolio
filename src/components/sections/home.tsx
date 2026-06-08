@@ -64,8 +64,8 @@ const HomeSection = () => {
           Software Engineer with 5+ years of experience building scalable web applications and cloud-ready systems. I help teams deliver reliable, production-grade solutions by combining strong technical expertise, clear communication, and a focus on long-term maintainability.
         </p>
 
-        <a className="btn-primary">
-          Hire me
+        <a href="#binu-ai" className="btn-primary">
+          Check My Match Score
           <Image
             src="/icons/btn-arrow.svg"
             alt="Arrow"
@@ -75,7 +75,7 @@ const HomeSection = () => {
           />
         </a>
         <div className = "social-links-wrapper">
-          <a href = "#" className="social-link">
+          <a href = "https://www.facebook.com/profile.php?id=100083008376135" target="_blank" rel="noopener noreferrer" className="social-link">
             <Image
             src="/icons/fb-icon.svg"
             alt="Arrow"
@@ -84,7 +84,7 @@ const HomeSection = () => {
             className="btn-arrow"
           />
           </a>
-          <a href = "#" className="social-link">
+          {/* <a href = "#" className="social-link">
             <Image
             src="/icons/insta-icon.svg"
             alt="Arrow"
@@ -92,8 +92,9 @@ const HomeSection = () => {
             height={12}
             className="btn-arrow"
           />
-          </a>
-          <a href = "#" className="social-link">
+          </a> */}
+
+          <a href = "https://www.linkedin.com/in/binara-lokuliyanage-3963681a5/" target="_blank" rel="noopener noreferrer" className="social-link">
             <Image
             src="/icons/linkedin-icon.svg"
             alt="Arrow"
@@ -102,7 +103,7 @@ const HomeSection = () => {
             className="btn-arrow"
           />
           </a>
-          <a href = "#" className="social-link">
+          <a href = "https://www.youtube.com/@millionmilesdream" target="_blank" rel="noopener noreferrer" className="social-link">
             <Image
             src="/icons/yt-icon.svg"
             alt="Arrow"

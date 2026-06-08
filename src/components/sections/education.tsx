@@ -1,15 +1,20 @@
+import Reveal from "../reveal";
+
 const EducationSection = () => {
     return (
         <section id="education" className="section-padding-top section-padding-bottom bg-off-white">
             <div className="container text-center">
-                <h2>
+                <Reveal>
+                    <h2>
                     My <span className="highlight">Education</span>
                 </h2>
                 <p className="description-text">
                     My academic journey has strengthened my expertise in modern software engineering, cloud-native architectures, and scalable system design. Combined with over five years of industry experience, it has refined my analytical thinking and reinforced my commitment to building high-quality software solutions.
                 </p>
+                </Reveal>
                 <div className="bullet-section-wrapper padding-top">
-                    <div className="item">
+                   <Reveal>
+                     <div className="item">
                         <div className="bullet-line-wrapper">
                             <div className="bullet-line-invis"></div>
                             <div className="bullet-blank bullet"></div>
@@ -26,7 +31,7 @@ const EducationSection = () => {
                                 </div>
                             </div>
                             <p>
-                                Currently completing a Master of Information Technology with a focus on modern
+                                Completed a Master of Information Technology with a focus on modern
                                 software development, cloud technologies, and full stack application design. The
                                 program has strengthened my practical skills in building scalable, cloud-native
                                 applications, working with modern frameworks, and applying industry-standard
@@ -34,7 +39,7 @@ const EducationSection = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="item">
+                        <div className="item">
                         <div className="bullet-line-wrapper">
                             <div className="bullet-line-vis"></div>
                             <div className="bullet-blank"></div>
@@ -59,6 +64,7 @@ const EducationSection = () => {
                             </p>
                         </div>
                     </div>
+                    </Reveal>
                 </div>
             </div>
         </section>

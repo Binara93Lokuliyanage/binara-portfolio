@@ -58,12 +58,11 @@ const HomeDarkSection = () => {
           </h1>
 
           <p>
-            I’m Binara Lokuliyanage, a passionate Software Engineer with over 5 years
-            of professional experience in full-stack web development.
+            I will help you build your dream project with my expertise in software development. With a passion for coding and a commitment to excellence, I am dedicated to delivering high-quality solutions that meet your needs and exceed your expectations.
           </p>
 
-          <a className="btn-primary">
-            Hire me
+          <a href="#contact" className="btn-primary">
+            Contact Me
             <Image
               src="/icons/btn-arrow.svg"
               alt="Arrow"
@@ -73,7 +72,7 @@ const HomeDarkSection = () => {
             />
           </a>
           <div className="social-links-wrapper">
-            <a href="#" className="social-link">
+            <a href = "https://www.facebook.com/profile.php?id=100083008376135" target="_blank" rel="noopener noreferrer" className="social-link">
               <Image
                 src="/icons/fb-icon.svg"
                 alt="Arrow"
@@ -82,7 +81,7 @@ const HomeDarkSection = () => {
                 className="btn-arrow"
               />
             </a>
-            <a href="#" className="social-link">
+            {/* <a href="#" className="social-link">
               <Image
                 src="/icons/insta-icon.svg"
                 alt="Arrow"
@@ -90,8 +89,8 @@ const HomeDarkSection = () => {
                 height={12}
                 className="btn-arrow"
               />
-            </a>
-            <a href="#" className="social-link">
+            </a> */}
+            <a href = "https://www.linkedin.com/in/binara-lokuliyanage-3963681a5/" target="_blank" className="social-link">
               <Image
                 src="/icons/linkedin-icon.svg"
                 alt="Arrow"
@@ -100,7 +99,7 @@ const HomeDarkSection = () => {
                 className="btn-arrow"
               />
             </a>
-            <a href="#" className="social-link">
+            <a href="https://www.youtube.com/@millionmilesdream" target="_blank" rel="noopener noreferrer" className="social-link">
               <Image
                 src="/icons/yt-icon.svg"
                 alt="Arrow"

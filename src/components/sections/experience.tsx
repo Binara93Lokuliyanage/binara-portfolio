@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Reveal from "../reveal";
 
 const ExperienceSection = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -49,11 +50,15 @@ const ExperienceSection = () => {
             className="section-padding-top section-padding-bottom"
         >
             <div className="container text-center">
+                <Reveal>
+
                 <h2>
                     My <span className="highlight">Experience</span>
                 </h2>
+                </Reveal>
 
-                <div className="bullet-section-wrapper padding-top">
+                <Reveal>
+                    <div className="bullet-section-wrapper padding-top">
 
                     <div className="item">
                         <div className="bullet-line-wrapper">
@@ -121,6 +126,7 @@ const ExperienceSection = () => {
                     </div>
 
                 </div>
+                </Reveal>
             </div>
         </section>
     );

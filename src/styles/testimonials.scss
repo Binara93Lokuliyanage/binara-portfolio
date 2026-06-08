@@ -3,6 +3,7 @@
   overflow: hidden;
   position: relative;
   touch-action: pan-y;
+  padding: 0 1rem;
 
    /* PAUSE animation when hovering */
   &:hover .testimonial-track {

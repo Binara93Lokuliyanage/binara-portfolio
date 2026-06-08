@@ -1,6 +1,7 @@
 import Image from "next/image";
 "use client";
 import { useRef, useState } from "react";
+import Reveal from "../reveal";
 
 
 
@@ -52,7 +53,8 @@ const TestimonialsDarkSection = () => {
             id="testimonials"
             className="section-padding-top section-padding-bottom freelancer-dark bg-light-dark process-section"
         >
-            <div className="container col-2">
+            <Reveal>
+                <div className="container col-2">
 
                 <div
                     ref={sliderRef}
@@ -64,11 +66,35 @@ const TestimonialsDarkSection = () => {
                     <div ref={trackRef} className="testimonial-track">
                         <div className="card">
                             <div className="star-wrapper">
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                            </div>
+                            <p>
+                                <q>
+                                    Brilliant work! The developer was able to take my vision and turn it into a reality. The project was completed on time and exceeded my expectations. I would highly recommend this developer to anyone looking for high-quality work.
+                                </q>
+                            </p>
+                            <div className="client-details-wrapper">
+                                <div className="client-image-wrapper">
+                                    <img src="/logo.jpg" alt="Logo" />
+                                </div>
+                                <div className="client-details">
+                                    <h4>John Doe</h4>
+                                    <p>Managing Director</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <div className="star-wrapper">
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
                             </div>
                             <p>
                                 " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna. Pellentesque at ullamcorper arcu. Duis molestie dolor non cursus vulputate."
@@ -86,33 +112,11 @@ const TestimonialsDarkSection = () => {
 
                         <div className="card">
                             <div className="star-wrapper">
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                            </div>
-                            <p>
-                                " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna. Pellentesque at ullamcorper arcu. Duis molestie dolor non cursus vulputate."
-                            </p>
-                            <div className="client-details-wrapper">
-                                <div className="client-image-wrapper">
-                                    <img src="/logo.jpg" alt="Logo" />
-                                </div>
-                                <div className="client-details">
-                                    <h4>John Doe</h4>
-                                    <p>Managing Director</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="star-wrapper">
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
-                                <img src="icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
+                                <img src="/icons/star.png" alt="Logo" />
                             </div>
                             <p>
                                 " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ex finibus, malesuada magna id, tempus magna. Pellentesque at ullamcorper arcu. Duis molestie dolor non cursus vulputate."
@@ -141,6 +145,7 @@ const TestimonialsDarkSection = () => {
                 </div>
 
             </div>
+            </Reveal>
         </section>
     );
 };

@@ -23,7 +23,7 @@ const CtaSection = () => {
                             <Reveal delay={0.2}>
                                 <p>Looking for a developer who can integrate quickly and deliver real results? I bring strong full-stack experience, clear communication, and a focus on building scalable, production-ready solutions.</p>
                                 <div className="cta-actions-wrapper">
-                                    <a href="#">
+                                    <a href="callto:+61433441325">
                                         <Image
                                             src="/icons/contact-active.svg"
                                             alt="Arrow"
@@ -43,7 +43,7 @@ const CtaSection = () => {
                                         />
                                         <span className="cta-action-text"> Write to me</span>
                                     </a>
-                                    <a href="mailto:mr.binara@gmail.com">
+                                    <a href="http://localhost:3000/professional/binu-ai">
                                         <Image
                                             src="/icons/download-black.svg"
                                             alt="Arrow"
