@@ -24,10 +24,10 @@ export type Project = {
 };
 
 const PROJECTS_API_URL =
-  process.env.PROJECTS_API_URL ?? "http://13.236.4.82:5000/api/projects";
+  process.env.PROJECTS_API_URL ?? "https://binara-portfolio-backend.onrender.com/api/projects";
 const FEATURED_PROJECTS_API_URL =
   process.env.FEATURED_PROJECTS_API_URL ??
-  "http://13.236.4.82:5000/api/projects/featured";
+  "https://binara-portfolio-backend.onrender.com/api/projects/featured";
 
 const normalizeProjects = (projects: Project[]) =>
   projects.map((project) => ({
