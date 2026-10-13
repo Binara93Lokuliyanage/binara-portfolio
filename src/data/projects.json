@@ -614,6 +614,58 @@
     ]
   },
   {
+  "slug": "salvation-auto",
+  "title": "Salvation Auto",
+  "tagline": "A custom WordPress website that turns automotive service information into clear enquiry and appointment journeys.",
+  "category": "Business Website & CMS",
+  "heroImage": "/projects/salvation-auto-project-image.png",
+  "cardVideo": null,
+  "cardDescription": "A responsive automotive website with a bespoke WordPress theme, editable service pages, customer forms, and streamlined enquiry paths.",
+  "about": [
+    "Salvation Auto is a custom WordPress website built to present automotive services clearly and help customers make enquiries or request appointments.",
+    "The site combines reusable service templates, editable content, forms, an Instagram integration, and a customer blog contribution flow."
+  ],
+  "techStack": [
+    "WordPress",
+    "PHP",
+    "HTML5",
+    "CSS3",
+    "SCSS",
+    "JavaScript",
+    "Formidable Forms",
+    "Hostinger"
+  ],
+  "video": null,
+  "contributions": [
+    {
+      "title": "Custom WordPress Theme",
+      "description": "Designed and developed a responsive PHP theme with reusable service templates and content the client can maintain."
+    },
+    {
+      "title": "Customer Journeys and Forms",
+      "description": "Built clear enquiry and appointment paths, integrated Instagram, and added a blog contribution flow using Formidable Forms."
+    },
+    {
+      "title": "Launch and Ongoing Support",
+      "description": "Handled mobile testing, technical SEO, performance checks, hosting, DNS and SSL configuration, deployment, and post-launch support."
+    }
+  ],
+  "highlights": [
+    {
+      "label": "Platform",
+      "value": "WordPress"
+    },
+    {
+      "label": "Focus",
+      "value": "Enquiries"
+    },
+    {
+      "label": "Stack",
+      "value": "PHP"
+    }
+  ]
+},
+  {
   "slug": "vibrant-insights",
   "title": "Vibrant Insights",
   "tagline": "A modern Webflow website designed to present services with clarity, strong branding, and user-focused layout.",
