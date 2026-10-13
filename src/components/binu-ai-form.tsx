@@ -81,14 +81,14 @@ const ResultList = ({ title, items }: { title: string; items: string[] }) => {
   }
 
   return (
-    <section className="binu-ai-result-section">
+    <div className="binu-ai-result-section">
       <h3>{title}</h3>
       <ul>
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
       </ul>
-    </section>
+    </div>
   );
 };
 
@@ -165,10 +165,10 @@ const BinuResult = ({ payload }: { payload: unknown }) => {
       </div>
 
       {quickSummary && (
-        <section className="binu-ai-result-section is-highlighted">
+        <div className="binu-ai-result-section is-highlighted">
           <h3>Quick Summary</h3>
           <p>{quickSummary}</p>
-        </section>
+        </div>
       )}
 
       <div className="binu-ai-result-grid">
@@ -192,17 +192,17 @@ const BinuResult = ({ payload }: { payload: unknown }) => {
       />
 
       {suggestedNextStep && (
-        <section className="binu-ai-result-section">
+        <div className="binu-ai-result-section">
           <h3>Suggested Next Step</h3>
           <p>{suggestedNextStep}</p>
-        </section>
+        </div>
       )}
 
       {recruiterFriendlyResponse && (
-        <section className="binu-ai-result-section is-highlighted">
+        <div className="binu-ai-result-section is-highlighted">
           <h3>Recruiter-Friendly Response</h3>
           <p>{recruiterFriendlyResponse}</p>
-        </section>
+        </div>
       )}
     </article>
   );
